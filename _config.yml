@@ -12,7 +12,7 @@ locale                   : "en-US"
 title                    : "Personal Site"
 title_separator          : "-"
 name                     : "Mark Clare"
-description              : "Sports Trader."
+description              : "Sports betting.  Football.  Data Science & Maths."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -86,7 +86,7 @@ analytics:
 author:
   name             : "Mark Clare"
   avatar           : "assets/images/profile.jpg"
-  bio              : "Sports betting.  Football.  Data Science & Maths."
+  bio              : "Sports Trader."
   location         : "London"
   email            :
   uri              :
