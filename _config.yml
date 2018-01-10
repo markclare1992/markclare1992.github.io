@@ -12,7 +12,7 @@ locale                   : "en-US"
 title                    : "Personal Site"
 title_separator          : "-"
 name                     : "Mark Clare"
-description              : "Sports betting.  Football.  Data Science & Maths."
+description              : "Sports Trader."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -85,7 +85,7 @@ analytics:
 # Site Author
 author:
   name             : "Mark Clare"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "assets/images/profile.jpg"
   bio              : "Sports betting.  Football.  Data Science & Maths."
   location         : "London"
   email            :
@@ -103,7 +103,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "mark-clare-a51aba4a"
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
