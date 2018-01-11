@@ -11,12 +11,35 @@ Python, RStudio, MongoDB & D3.
 
 ## About Me
 ### Personal Betting
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+Majority of betting done on early asian handicap markets.
+Ratings for major European leagues using both XG & non-XG models, both for short term bets above and long term bets.
+Player specific databases used for further bets.
+Python used for web scraping, MongoDB used as the database, private Github repo's for version control.
+Shiny app's used for calculations. 
 
 ### Footbal Trader
 #### Spreadex
 ##### September 2015 - Present
-"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+Web scraping to maintain databases relevant for pricing. (Using Rvest & tidyverse)
+Shiny app development to simplify pricing process. (Using shiny & ggplot)
+Various short term ratings for top all leagues. (Using caret & Rstan)
+Long term pricing for leagues and tournaments.
+Modelling and pricing of niche markets.
 
 ### Education
-"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+#### Post Graduate Diploma - Statistics & Applied Probability - Distinction (73%)
+##### University Of Nottingham - 2014-15
+Average 73%
+Time Series & Forecasting 84% (Analysis of time sequential data, model identification, parameter estimation, forecasting, assessment & implementation using R)
+Fundamentals of Statistics 73% (Introduction to basics of Probability, Statistics and Linear models, Statistical Inference)
+
+#### Bachelor of Science (BS) - Mathematics - 1st Class Honours (74%)
+##### University Of Nottingham - 2011-14
+Third Year Average 74%
+Third Year Modules; Optimization, Differential Equations, Medicine & Biology, Game Theory, Scientific Computation, Coding & Cryptography, Fluid Dynamics.
+
+Second Year Average 74%
+Second Year Modules; Mathematical Analysis, Vector Calculus, Fourier Analysis, Complex Functions, Number Theory, Numerical Methods, Physics, Modelling.
+
+First Year Average 77%
+First Year Modules; Analytical, Applied, Calculus, Foundations of Pure Maths, Linear, Structures, Probability, Statistics.
