@@ -1,5 +1,5 @@
 ---
-title: "Personal Site"
+title: "Personal Sit"
 layout: home
 permalink: /
 author_profile: true
