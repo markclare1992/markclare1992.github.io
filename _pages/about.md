@@ -10,32 +10,31 @@ Sports trader with an interest in data science & programming.  The site will sha
 Analysis & visualisation will be done using software including;
 Python, RStudio, MongoDB & D3.
 
-## About Me
-### Personal Betting
+## Personal Betting
 Majority of betting done on early asian handicap markets.
 Ratings for major European leagues using both XG & non-XG models, both for short term bets above and long term bets.
 Player specific databases used for further bets.
 Python used for web scraping, MongoDB used as the database, private Github repo's for version control.
 Shiny app's used for calculations. 
 
-### Footbal Trader
-#### Spreadex
-##### September 2015 - Present
+## Footbal Trader
+### Spreadex
+#### September 2015 - Present
 Web scraping to maintain databases relevant for pricing (using Rvest & tidyverse).
 Shiny app development to simplify pricing process (using shiny & ggplot).
 Various short term ratings for top all leagues (using caret & Rstan).
 Long term pricing for leagues and tournaments.
 Modelling and pricing of niche markets.
 
-### Education
-#### Post Graduate Diploma - Statistics & Applied Probability - Distinction (73%)
-##### University Of Nottingham - 2014-15
+## Education
+### Post Graduate Diploma - Statistics & Applied Probability - Distinction (73%)
+#### University Of Nottingham - 2014-15
 Average 73%
 Time Series & Forecasting 84% (Analysis of time sequential data, model identification, parameter estimation, forecasting, assessment & implementation using R)
 Fundamentals of Statistics 73% (Introduction to basics of Probability, Statistics and Linear models, Statistical Inference)
 
-#### Bachelor of Science (BS) - Mathematics - 1st Class Honours (74%)
-##### University Of Nottingham - 2011-14
+### Bachelor of Science (BS) - Mathematics - 1st Class Honours (74%)
+#### University Of Nottingham - 2011-14
 Third Year Average 74%
 Third Year Modules; Optimization, Differential Equations, Medicine & Biology, Game Theory, Scientific Computation, Coding & Cryptography, Fluid Dynamics.
 
