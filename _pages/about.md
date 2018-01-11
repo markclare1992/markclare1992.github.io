@@ -12,6 +12,6 @@ Python, RStudio, MongoDB & D3.
 ## About Me
 ### Personal Betting
 
-### Sports Trader - Spreadex
+### Footbal Trader. Spreadex: September 2015 - Present
 
 ### Education
