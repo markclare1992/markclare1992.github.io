@@ -11,4 +11,4 @@ Python, RStudio, MongoDB & D3.
 
 ## About Me
 
-# Personal Betting
+### Personal Betting
