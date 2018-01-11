@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "dark"
 
 # Site Settings
 locale                   : "en-GB"
-title                    : "Personal Site"
+title                    : "Home"
 title_separator          : "-"
 name                     : "Mark Clare"
 description              : "Sports betting.  Football.  Data Science & Maths."
