@@ -1,8 +1,11 @@
 ---
 permalink: /about/
-title: "About Me"
+title: "About"
 author_profile: true
 layout: single
 last_modified_at: 2018-01-10
 ---
-Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
+Sports trader with an interest in data science & programming.  The site will share posts & projects mainly revolving around football.
+Analysis & visualisation will be done using software including; Python, Rstudio, MongoDB & D3.
+
+##About Me
