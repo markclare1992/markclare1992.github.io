@@ -1,6 +1,6 @@
 ---
-title: "Personal Sit"
-layout: home
+title: "Personal Site"
+layout: single
 permalink: /
 author_profile: true
 ---
