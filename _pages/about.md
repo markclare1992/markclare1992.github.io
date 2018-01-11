@@ -39,13 +39,13 @@ Python, RStudio, MongoDB & D3.
 ### Bachelor of Science (BS) - Mathematics - 1st Class Honours (74%)
 #### University Of Nottingham - 2011-14
 ##### Third Year Average 74%
-Third Year Modules; Optimization, Differential Equations, Medicine & Biology, Game Theory, Scientific Computation, Coding & Cryptography, Fluid Dynamics.
+Optimization, Differential Equations, Medicine & Biology, Game Theory, Scientific Computation, Coding & Cryptography, Fluid Dynamics.
 
 ##### Second Year Average 74%
-Second Year Modules; Mathematical Analysis, Vector Calculus, Fourier Analysis, Complex Functions, Number Theory, Numerical Methods, Physics, Modelling.
+Mathematical Analysis, Vector Calculus, Fourier Analysis, Complex Functions, Number Theory, Numerical Methods, Physics, Modelling.
 
 ##### First Year Average 77%
-First Year Modules; Analytical, Applied, Calculus, Foundations of Pure Maths, Linear, Structures, Probability, Statistics.
+Analytical, Applied, Calculus, Foundations of Pure Maths, Linear, Structures, Probability, Statistics.
 
 ### Data Analsyst Nanodegree
 #### Udacity 2015-17
