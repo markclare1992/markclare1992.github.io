@@ -43,3 +43,14 @@ Second Year Modules; Mathematical Analysis, Vector Calculus, Fourier Analysis, C
 
 First Year Average 77%
 First Year Modules; Analytical, Applied, Calculus, Foundations of Pure Maths, Linear, Structures, Probability, Statistics.
+
+### Data Analsyst Nanodegree
+#### Udacity 2015-17
+Completed online course which included the following projects;
+1. Testing a perceptual phenomenon - Compute descriptive statistics an perform statistical test.
+2. Investigate a dataset - Choose a dataset, perform an investigation and share findings.
+3. Data wrangling - Audit, clean and import data into a database (MongoDB), then run queries on database.
+4. Explore & summarize data - Scrape a dataset and perform a complete exploratory data analysis using R.
+5. Identify fraud - Use machine learning (Python) to identify persons of interest in the Enron dataset.
+6 . Data visualisaion - Use D3 to build an effective visualisation.
+7. A/B testing - Make design decisions for an A/B test and analyse results of a test.
