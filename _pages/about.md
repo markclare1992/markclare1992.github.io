@@ -30,7 +30,6 @@ Python, RStudio, MongoDB & D3.
 ## Education
 ### Post Graduate Diploma - Statistics & Applied Probability - Distinction (73%)
 #### University Of Nottingham - 2014-15
-Average 73%
 - Time Series & Forecasting 84% (Analysis of time sequential data, model identification, parameter estimation, forecasting, assessment & implementation using R)
 - Fundamentals of Statistics 73% (Introduction to basics of Probability, Statistics and Linear models, Statistical Inference)
 - Computational Statistics 71% (Simulation, MCMC, Density Estimation)
@@ -39,13 +38,13 @@ Average 73%
 
 ### Bachelor of Science (BS) - Mathematics - 1st Class Honours (74%)
 #### University Of Nottingham - 2011-14
-Third Year Average 74%
+##### Third Year Average 74%
 Third Year Modules; Optimization, Differential Equations, Medicine & Biology, Game Theory, Scientific Computation, Coding & Cryptography, Fluid Dynamics.
 
-Second Year Average 74%
+##### Second Year Average 74%
 Second Year Modules; Mathematical Analysis, Vector Calculus, Fourier Analysis, Complex Functions, Number Theory, Numerical Methods, Physics, Modelling.
 
-First Year Average 77%
+##### First Year Average 77%
 First Year Modules; Analytical, Applied, Calculus, Foundations of Pure Maths, Linear, Structures, Probability, Statistics.
 
 ### Data Analsyst Nanodegree
