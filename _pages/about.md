@@ -13,6 +13,7 @@ Python, RStudio, MongoDB & D3.
 ## Personal Betting
 Majority of betting done on early asian handicap markets.
 Ratings for major European leagues using both XG & non-XG models, both for short term bets above and long term bets.
+Use of API's for notifications & pricing.
 Player specific databases used for further bets.
 Python used for web scraping, MongoDB used as the database, private Github repo's for version control.
 Shiny app's used for calculations. 
