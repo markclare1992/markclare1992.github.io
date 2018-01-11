@@ -21,9 +21,9 @@ Shiny app's used for calculations.
 ### Footbal Trader
 #### Spreadex
 ##### September 2015 - Present
-Web scraping to maintain databases relevant for pricing. (Using Rvest & tidyverse)
-Shiny app development to simplify pricing process. (Using shiny & ggplot)
-Various short term ratings for top all leagues. (Using caret & Rstan)
+Web scraping to maintain databases relevant for pricing (using Rvest & tidyverse).
+Shiny app development to simplify pricing process (using shiny & ggplot).
+Various short term ratings for top all leagues (using caret & Rstan).
 Long term pricing for leagues and tournaments.
 Modelling and pricing of niche markets.
 
