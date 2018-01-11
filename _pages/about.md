@@ -11,21 +11,21 @@ Analysis & visualisation will be done using software including;
 Python, RStudio, MongoDB & D3.
 
 ## Personal Betting
-Majority of betting done on early asian handicap markets.
-Ratings for major European leagues using both XG & non-XG models, both for short term bets above and long term bets.
-Use of API's for notifications & pricing.
-Player specific databases used for further bets.
-Python used for web scraping, MongoDB used as the database, private Github repo's for version control.
-Shiny app's used for calculations. 
+- Majority of betting done on early asian handicap markets.
+- Ratings for major European leagues using both XG & non-XG models, both for short term bets above and long term bets.
+- Use of API's for notifications & pricing.
+- Player specific databases used for further bets.
+- Python used for web scraping, MongoDB used as the database, private Github repo's for version control.
+- Shiny app's used for calculations. 
 
 ## Footbal Trader
 ### Spreadex
 #### September 2015 - Present
-Web scraping to maintain databases relevant for pricing (using Rvest & tidyverse).
-Shiny app development to simplify pricing process (using shiny & ggplot).
-Various short term ratings for top all leagues (using caret & Rstan).
-Long term pricing for leagues and tournaments.
-Modelling and pricing of niche markets.
+- Web scraping to maintain databases relevant for pricing (using Rvest & tidyverse).
+- Shiny app development to simplify pricing process (using shiny & ggplot).
+- Various short term ratings for top all leagues (using caret & Rstan).
+- Long term pricing for leagues and tournaments.
+- Modelling and pricing of niche markets.
 
 ## Education
 ### Post Graduate Diploma - Statistics & Applied Probability - Distinction (73%)
