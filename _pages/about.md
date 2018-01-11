@@ -31,8 +31,11 @@ Python, RStudio, MongoDB & D3.
 ### Post Graduate Diploma - Statistics & Applied Probability - Distinction (73%)
 #### University Of Nottingham - 2014-15
 Average 73%
-Time Series & Forecasting 84% (Analysis of time sequential data, model identification, parameter estimation, forecasting, assessment & implementation using R)
-Fundamentals of Statistics 73% (Introduction to basics of Probability, Statistics and Linear models, Statistical Inference)
+- Time Series & Forecasting 84% (Analysis of time sequential data, model identification, parameter estimation, forecasting, assessment & implementation using R)
+- Fundamentals of Statistics 73% (Introduction to basics of Probability, Statistics and Linear models, Statistical Inference)
+- Computational Statistics 71% (Simulation, MCMC, Density Estimation)
+- Advanced Stochastic Processes 70% (Martingales, Brownian Motion & Renewal Processes)
+- Stochastic Models 65% (Poisson Process, Queueing & Reliability)
 
 ### Bachelor of Science (BS) - Mathematics - 1st Class Honours (74%)
 #### University Of Nottingham - 2011-14
