@@ -10,5 +10,8 @@ Analysis & visualisation will be done using software including;
 Python, RStudio, MongoDB & D3.
 
 ## About Me
-
 ### Personal Betting
+
+### Sports Trader - Spreadex
+
+### Education
