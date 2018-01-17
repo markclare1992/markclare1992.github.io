@@ -57,3 +57,7 @@ Completed online course which included the following projects;
 5. Identify fraud - Use machine learning (Python) to identify persons of interest in the Enron dataset.
 6 . Data visualisaion - Use D3 to build an effective visualisation.
 7. A/B testing - Make design decisions for an A/B test and analyse results of a test.
+
+### MongoDB University
+#### Present
+Completing various online courses to improve Mongo competence.
