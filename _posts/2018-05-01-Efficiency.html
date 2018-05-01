@@ -38,7 +38,7 @@
         </div>
         <script>
             require(['d3-exploding-boxplot', 'd3'], function(exploding_boxplot, d3) {
-                d3.json("d3data.json", function(data) {
+                d3.json("/assets/d3data.json", function(data) {
                     var chart = exploding_boxplot(data['data'], {
                         y: 'percentage_change',
                         group: 'league',
