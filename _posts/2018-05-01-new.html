@@ -1,1 +1,59 @@
-as
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Efficiency</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="bower_components/requirejs/require.js"></script>
+    <link href="src/d3_exploding_boxplot.css" rel="stylesheet" type="text/css"></link>
+    <script type="text/javascript">
+        require.config({
+            baseUrl: ".",
+            paths: {
+                d3: 'bower_components/d3/d3.min',
+                "d3-tip": 'bower_components/d3-tip/index',
+                'd3-exploding-boxplot': 'src/d3_exploding_boxplot'
+            },
+            shim: {
+                'd3-exploding-boxplot': {
+                    deps: ['d3', 'd3-tip']
+                },
+                'd3-tip': {
+                    deps: ['d3']
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <section class="page-header">
+        <h1 class="project-name">Pricing efficiency on total goals market.</h1>
+        <p> Click on boxplots to see individual data points.</p>
+    </section>
+    <section class="main-content">
+        <div id="chartContainer">
+        </div>
+        <script>
+            require(['d3-exploding-boxplot', 'd3'], function(exploding_boxplot, d3) {
+                d3.json("d3data.json", function(data) {
+                    var chart = exploding_boxplot(data['data'], {
+                        y: 'percentage_change',
+                        group: 'league',
+                        color: 'league',
+                        label_1: 'game',
+                        label_2: 'line',
+                        label_3: 'selection',
+                        label_4: 'open',
+                        label_5: 'close'
+                    });
+                    chart('#chartContainer');
+                });
+                d3.select("body").style("background-color", "#252a34");
+            });
+        </script>
+</body>
+
+</html>
