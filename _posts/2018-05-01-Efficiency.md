@@ -11,6 +11,68 @@ tags:
   - total goals
 comments: true
 ---
+<style>
+.axis text {
+  font: 12px Open Sans;
+  text-anchor: middle;
+  letter-spacing: 1px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  fill: none;
+  stroke: #eaeaea;
+  shape-rendering: crispEdges;
+}
+
+
+.x.axis path {
+  /*display: none;*/
+}
+
+rect.d3-exploding-boxplot.box{
+  /*opacity: 0.8;*/
+}
+
+line.d3-exploding-boxplot.line,
+rect.d3-exploding-boxplot.box
+{
+  stroke: #000000;
+  stroke-width: 1px;
+}
+
+line.d3-exploding-boxplot.vline{
+  stroke-dasharray:5,5;
+}
+
+.d3-exploding-boxplot.tip{
+  font: normal 13px 'Lato', 'Open sans', sans-serif;
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: #333333;
+  color: #DDDDDD;
+  border-radius: 2px;
+}
+
+g.tick text,
+g.axis text{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+</style>
+
+
 
 ## Price movements.
 The graph below shows the change in price of total goals markets using Pinnacle's opening & closing prices.  Each data point represents a game in which a selection has shortened in price.  I wanted to see whether there was any drastic difference in efficiency across the main European leagues.
@@ -59,6 +121,4 @@ The graph below shows the change in price of total goals markets using Pinnacle'
     });
 </script>
 
-
- <link href="/assets/src/d3_exploding_boxplot.css" rel="stylesheet" type="text/css"></link>
 
