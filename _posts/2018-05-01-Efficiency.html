@@ -1,59 +1,55 @@
-<!DOCTYPE html>
-<html lang="en-us">
+---
+title: "Which league to bet on?"
+date: 2018-05-01
+layout: single
+excerpt: Betting market efficiency.
+categories:
+  - Football
+tags:
+  - football
+  - betting
+  - total goals
+comments: true
+---
 
-<head>
-    <meta charset="UTF-8">
-    <title>Efficiency</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <script src="/assets/bower_components/requirejs/require.js"></script>
-    <link href="/assets/src/d3_exploding_boxplot.css" rel="stylesheet" type="text/css"></link>
-    <script type="text/javascript">
-        require.config({
-            baseUrl: ".",
-            paths: {
-                d3: '/assets/bower_components/d3/d3.min',
-                "d3-tip": '/assets/bower_components/d3-tip/index',
-                'd3-exploding-boxplot': '/assets/src/d3_exploding_boxplot'
+<script src="/assets/bower_components/requirejs/require.js"></script>
+<link href="/assets/src/d3_exploding_boxplot.css" rel="stylesheet" type="text/css"></link>
+<script type="text/javascript">
+    require.config({
+        baseUrl: ".",
+        paths: {
+            d3: '/assets/bower_components/d3/d3.min',
+            "d3-tip": '/assets/bower_components/d3-tip/index',
+            'd3-exploding-boxplot': '/assets/src/d3_exploding_boxplot'
+        },
+        shim: {
+            'd3-exploding-boxplot': {
+                deps: ['d3', 'd3-tip']
             },
-            shim: {
-                'd3-exploding-boxplot': {
-                    deps: ['d3', 'd3-tip']
-                },
-                'd3-tip': {
-                    deps: ['d3']
-                }
+            'd3-tip': {
+                deps: ['d3']
             }
-        });
-    </script>
-</head>
-
-<body>
-    <section class="page-header">
-        <h1 class="project-name">Pricing efficiency on total goals market.</h1>
-        <p> Click on boxplots to see individual data points.</p>
-    </section>
-    <section class="main-content">
-        <div id="chartContainer">
-        </div>
-        <script>
-            require(['d3-exploding-boxplot', 'd3'], function(exploding_boxplot, d3) {
-                d3.json("/assets/d3data.json", function(data) {
-                    var chart = exploding_boxplot(data['data'], {
-                        y: 'percentage_change',
-                        group: 'league',
-                        color: 'league',
-                        label_1: 'game',
-                        label_2: 'line',
-                        label_3: 'selection',
-                        label_4: 'open',
-                        label_5: 'close'
-                    });
-                    chart('#chartContainer');
-                });
-                d3.select("body").style("background-color", "#252a34");
+        }
+    });
+</script>
+<div id="chartContainer">
+    
+</div>
+<script>
+    require(['d3-exploding-boxplot', 'd3'], function(exploding_boxplot, d3) {
+        d3.json("/assets/d3data.json", function(data) {
+            var chart = exploding_boxplot(data['data'], {
+                y: 'percentage_change',
+                group: 'league',
+                color: 'league',
+                label_1: 'game',
+                label_2: 'line',
+                label_3: 'selection',
+                label_4: 'open',
+                label_5: 'close'
             });
-        </script>
-</body>
-
-</html>
+            chart('#chartContainer');
+        });
+        d3.select("body").style("background-color", "#252a34");
+    });
+</script>
