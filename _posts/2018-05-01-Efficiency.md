@@ -32,9 +32,6 @@ comments: true
         }
     });
 </script>
-<div id="chartContainer">
-    
-</div>
 <script>
     require(['d3-exploding-boxplot', 'd3'], function(exploding_boxplot, d3) {
         d3.json("/assets/d3data.json", function(data) {
@@ -53,3 +50,7 @@ comments: true
         d3.select("body").style("background-color", "#252a34");
     });
 </script>
+## Price movements.
+The graph below shows the change in price of total goals markets using Pinnacle's opening & closing prices.  Each data point represents a game in which a selection has shortened in price.
+<div id="chartContainer">
+</div>
