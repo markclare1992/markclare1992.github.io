@@ -51,7 +51,8 @@ comments: true
     });
 </script>
 ## Price movements.
-The graph below shows the change in price of total goals markets using Pinnacle's opening & closing prices.  Each data point represents a game in which a selection has shortened in price.
-### Click on box to see individual game, double click whitespace to revert.
+The graph below shows the change in price of total goals markets using Pinnacle's opening & closing prices.  Each data point represents a game in which a selection has shortened in price.  I wanted to see whether there was any difference between the main European leagues.
+#### Click on box to see individual game, double click whitespace to revert.
 <div id="chartContainer">
 </div>
+#### Disclaimer: Data is scraped so opening price may not necesssarily have been the first price shown.
