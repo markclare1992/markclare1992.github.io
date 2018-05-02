@@ -3,6 +3,8 @@ title: "Which league to bet on?"
 date: 2018-05-01
 layout: single
 excerpt: Betting market efficiency.
+header:
+  teaser: "/assets/images/Screenshot from 2018-05-02 14-41-20.png"
 categories:
   - Football
 tags:
