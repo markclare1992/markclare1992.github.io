@@ -11,9 +11,6 @@ tags:
   - total goals
 comments: true
 ---
-<head>
-<link href="/assets/src/d3_exploding_boxplot.css" rel="stylesheet" type="text/css"></link>
-</head>
 
 ## Price movements.
 The graph below shows the change in price of total goals markets using Pinnacle's opening & closing prices.  Each data point represents a game in which a selection has shortened in price.  I wanted to see whether there was any drastic difference in efficiency across the main European leagues.
@@ -59,4 +56,7 @@ The graph below shows the change in price of total goals markets using Pinnacle'
         d3.select("body").style("background-color", "#252a34");
     });
 </script>
+
+
+<script href="/assets/src/d3_exploding_boxplot.css" rel="stylesheet" type="text/css"></script>
 
