@@ -81,9 +81,9 @@ The graph below shows the change in price of total goals markets using Pinnacle'
 #### Click on box to see individual games, double click whitespace to revert.
 <div id="chartContainer">
 </div>
-#### Disclaimer: Data is scraped so opening price may not necesssarily have been the first price shown.
+#### Disclaimer: Data is scraped so opening price may not necesssarily have been the first price shown.  Only one over/under line used per game (line which closed closest to 50%).
 
-[**D3 code for exploding boxplot from mcaule**](https://mcaule.github.io/d3_exploding_boxplot/)
+[**D3 code for exploding boxplot from mcaule.**](https://mcaule.github.io/d3_exploding_boxplot/)
 
 <script src="/assets/bower_components/requirejs/require.js"></script>
 <script type="text/javascript">
