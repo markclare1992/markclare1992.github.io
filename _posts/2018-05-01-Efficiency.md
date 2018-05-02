@@ -13,7 +13,7 @@ comments: true
 ---
 <style>
 .axis text {
-  font: 12px Open Sans;
+  font-size: 12px;
   text-anchor: middle;
   letter-spacing: 1px;
 }
@@ -52,7 +52,7 @@ line.d3-exploding-boxplot.vline{
 }
 
 .d3-exploding-boxplot.tip{
-  font: normal 13px 'Lato', 'Open sans', sans-serif;
+  font-size:13px;
   line-height: 1;
   font-weight: bold;
   padding: 12px;
