@@ -52,5 +52,6 @@ comments: true
 </script>
 ## Price movements.
 The graph below shows the change in price of total goals markets using Pinnacle's opening & closing prices.  Each data point represents a game in which a selection has shortened in price.
+### Click on box to see individual game, double click whitespace to revert.
 <div id="chartContainer">
 </div>
