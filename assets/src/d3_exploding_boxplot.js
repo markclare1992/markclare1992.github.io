@@ -62,7 +62,7 @@ function(d3,d3tip)
     var height = 480
     var width = 600
     var boxpadding = 0.2
-    var margin = {top:20,bottom:120,left:50,right:20}
+    var margin = {top:20,bottom:120,left:60,right:20}
 	var rotateXLabels = true;
 
     aes.color = aes.color || aes.group
