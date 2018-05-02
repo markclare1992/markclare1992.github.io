@@ -21,7 +21,6 @@ The graph below shows the change in price of total goals markets using Pinnacle'
 #### Disclaimer: Data is scraped so opening price may not necesssarily have been the first price shown.
 
 <script src="/assets/bower_components/requirejs/require.js"></script>
-<link href="/assets/src/d3_exploding_boxplot.css" rel="stylesheet" type="text/css"></link>
 <script type="text/javascript">
     require.config({
         baseUrl: ".",
