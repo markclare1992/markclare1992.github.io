@@ -60,5 +60,5 @@ The graph below shows the change in price of total goals markets using Pinnacle'
 </script>
 
 <script>
-<link href="/assets/src/d3_exploding_boxplot.css" rel="stylesheet" type="text/css"></link>
+  <link href="/assets/src/d3_exploding_boxplot.css" rel="stylesheet" type="text/css"></link>
 </script>
