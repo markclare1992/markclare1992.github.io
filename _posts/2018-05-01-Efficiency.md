@@ -22,7 +22,7 @@ comments: true
 .axis line {
   fill: none;
   stroke: #000000;
-  shape-rendering: crispEdges;
+  shape-rendering: crispEdges;Disclaimer
 }
 
 .axis text {
@@ -76,7 +76,7 @@ g.axis text{
 
 ## Price movements.
 The graph below shows the change in price of total goals markets using Pinnacle's opening & closing prices.  Each data point represents a game in which a selection has shortened in price.  I wanted to see whether there was any drastic difference in efficiency across the main European leagues.
-#### Click on box to see individual game, double click whitespace to revert.
+#### Click on box to see individual games, double click whitespace to revert.
 <div id="chartContainer">
 </div>
 #### Disclaimer: Data is scraped so opening price may not necesssarily have been the first price shown.
