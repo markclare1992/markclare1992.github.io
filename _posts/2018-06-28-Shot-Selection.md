@@ -17,13 +17,15 @@ comments: true
 
 ## Shot location
 Removing penalties from the dataset and plotting the average locations for shots gave the plot below.
+
 <figure class='centre'>
-	<a href="/assets/images/avgshot.gif"><img src="/assets/images/avgshot.gif" width='1220' height='700'/>
+	<a href="/assets/images/avgshot.gif"><img src="/assets/images/avgshot.gif" width='1220' height='700'/></a>
 </figure>
 	
 ## Shot heat map
+
 <figure class='centre'>
-	<a href="/assets/images/gamestatelocation.gif"><img src="/assets/images/gamestatelocation.gif" width='1220' height='700'/>
+	<a href="/assets/images/gamestatelocation.gif"><img src="/assets/images/gamestatelocation.gif" width='1220' height='700'/></a>
 </figure>
 
 ## Shot generation
