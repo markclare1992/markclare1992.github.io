@@ -44,5 +44,6 @@ When teams are ahead they're more likely to score from a fast break and less lik
 There is the possibility that good teams are more likely to be in a positive game state, and that they might be good teams because they take better shots and because they can advance the ball to better areas.
 
 ## Continuation
+- Try and separate "good team" effects from game state.
 - It would be interesting to do a similar analysis for successfully completed pass locations and type of pass.  
 - Do proper spatial analysis and attempt to plot smoother density maps.
