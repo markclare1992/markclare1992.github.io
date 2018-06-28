@@ -16,7 +16,7 @@ comments: true
 ---
 
 ## Shot location
-I wanted to look at whether players take shots from different locations depending on what the current score is.  I was also interested in seeing how shots are generated and whether that changes based on game state too.
+I wanted to look at whether players take shots from different locations depending on what the current score is.  I was also interested in how shots are generated and whether that changes based on game state too.
 Removing penalties from the dataset and plotting the average locations for shots gave the plot below.
 
 <figure class='centre'>
