@@ -4,7 +4,7 @@ date: 2018-06-21
 layout: single
 excerpt: Changes in football based upon score.
 header:
-  teaser: "assets/images/gamestatelocation.gif"
+  teaser: "/assets/images/buildup.png"
 categories:
   - Football
 tags:
