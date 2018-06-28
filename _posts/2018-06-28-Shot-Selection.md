@@ -42,6 +42,6 @@ Does the way shots are generated change depending on the current score?
 ## Caveats
 There is the possibility that good teams are more likely to be in a positive game state, and that they might be good teams because they take better shots and because they can advance the ball to better areas.
 
-## Continution
+## Continuation
 - It would be interesting to do a similar analysis for successfully completed pass locations and type of pass.  
 - Do proper spatial analysis and attempt to plot smoother density maps.
