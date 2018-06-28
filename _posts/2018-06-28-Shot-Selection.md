@@ -17,12 +17,14 @@ comments: true
 
 ## Shot location
 Removing penalties from the dataset and plotting the average locations for shots gave the plot below.
-
-<img src="/assets/images/avgshot.gif" width='1220' height='700'/>
-
+<figure class='centre'>
+	<a href="/assets/images/avgshot.gif"><img src="/assets/images/avgshot.gif" width='1220' height='700'/>
+</figure>
+	
 ## Shot heat map
-
-<img src="/assets/images/gamestatelocation.gif" width='1220' height='700'/>
+<figure class='centre'>
+	<a href="/assets/images/gamestatelocation.gif"><img src="/assets/images/gamestatelocation.gif" width='1220' height='700'/>
+</figure>
 
 ## Shot generation
 Does the way shots are generated change depending on the current score?
