@@ -34,7 +34,7 @@ The average shot location may not be an accurate way of assessing change so I cr
 
 ## Shot generation
 Does the way shots are generated change depending on the current score?
-When teams are ahead they're more likely to score from a fast break and less likely to score from a set piece.
+When teams are ahead they're more likely to score from a fast break and less likely to score from a set piece, this intuitively makes sense given that the team behind are likely to be commiting more men forward in open play and the team ahead are less likely to commit men forward for set pieces.
 
 <figure class='centre'>
 	<a href="/assets/images/buildup.png"><img src="/assets/images/buildup.png"></a>
