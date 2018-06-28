@@ -25,7 +25,7 @@ Removing penalties from the dataset and plotting the average locations for shots
 </figure>
 	
 ## Shot heat map
-Looking at all shots and plotting a heat map for each game state.  I intended for these heatmaps to contain more gamestates and to be smoother but that takes a significant amount of computing power for large datasets.
+The average shot location may not be an accurate way of assessing for change so I created a density plot for the game states.  I intended for these heatmaps to contain more game-states and to be smoother but that takes a significant amount of computing power for large datasets.
 
 <figure class='centre'>
 	<a href="/assets/images/gamestatelocation.gif"><img src="/assets/images/gamestatelocation.gif" width='1220' height='700'/></a>
