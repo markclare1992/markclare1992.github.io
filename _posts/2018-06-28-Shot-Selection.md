@@ -1,5 +1,5 @@
 ---
-title: "Does game-state affect shot selection & style"
+title: "Does game state affect shot selection & style"
 date: 2018-06-21
 layout: single
 excerpt: Changes in football based upon score.
