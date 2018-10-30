@@ -41,3 +41,9 @@ By grouping the penalties by player they were taken by we can look at player con
 |Zlatan Ibrahimovic |55       |0.873         |
 |Edison Cavani      |44       |0.75          |
 |Sergio Aguero      |39       |0.769         |
+
+The mean conversion for a player is 69.4%, there is a lot of players in the dataset who have taken only 1 penalty (1041 out of 2494 players)
+
+<figure class='centre'>
+	<a href="/assets/images/pen_average.jpeg"><img src="/assets/images/pen_average.jpeg"></a>
+</figure>
