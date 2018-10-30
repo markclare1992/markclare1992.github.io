@@ -29,3 +29,15 @@ The table below shows the breakdown of all the penalties in my database.
 |Goal     |0.757|
 |Miss/Save|0.243|
 
+Prior to his Liverpool penalty Mahrez had a conversion percentage of 64.3% from 14 penalties.  Is this enough information to suggest he is bad at penalties?
+
+## Player conversion
+By grouping the penalties by player they were taken by we can look at player conversion, the table below shows the 5 players who have taken the most penalties in the dataset.
+
+| Player            | No. Pens| Conversion % |
+|-------------------|:--------|:-------------|
+|Cristiano Ronaldo  |86       |0.826         |
+|Lionel Messi       |57       |0.789         |
+|Zlatan Ibrahimovic |55       |0.873         |
+|Edison Cavani      |44       |0.75          |
+|Sergio Aguero      |39       |0.769         |
