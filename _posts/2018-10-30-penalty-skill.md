@@ -47,3 +47,5 @@ The mean conversion for a player is 69.4%, there is a lot of players in the data
 <figure class='centre'>
 	<a href="/assets/images/pen_average.jpeg"><img src="/assets/images/pen_average.jpeg"></a>
 </figure>
+
+## Modelling 
