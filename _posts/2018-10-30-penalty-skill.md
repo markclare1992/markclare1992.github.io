@@ -58,6 +58,7 @@ We have $$N$$ players in the dataset, each player $$n \in N$$ has $$y_{n}$$ goal
 ### Complete Pooling
 We model each penalty as having the same chance of success $$\phi \in [0,1]$$ 
 Using the following stan code, we can fit a model in R.
+### Stan Code
 ```
 data {
   int<lower=0> N;           // number players
@@ -71,7 +72,7 @@ model {
   y ~ binomial(K, phi);
 }
 ```
-
+### R Code
 ```
 N <- dim(df)[1]
 K <- df$K
