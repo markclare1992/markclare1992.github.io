@@ -57,3 +57,20 @@ We have $$N$$ players in the dataset, each player $$n \in N$$ has $$y_{n}$$ goal
 
 ### Complete Pooling
 We model each penalty as having the same chance of success $$\phi \in [0,1]$$ 
+
+```
+data {
+  int<lower=0> N;           // player
+  int<lower=0> K[N];        // attempts (trials)
+  int<lower=0> y[N];        // goals (successes)
+}
+parameters {
+  real<lower=0, upper=1> phi;  // chance of success (pooled)
+}
+model {
+  y ~ binomial(K, phi);
+}
+generated quantities { 
+  vector<lower=0, upper=1>[N] theta;  // chance-of-success
+}
+```
