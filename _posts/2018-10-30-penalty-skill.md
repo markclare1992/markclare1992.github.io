@@ -49,4 +49,4 @@ The mean conversion for a player is 69.4%, there is a lot of players in the data
 </figure>
 
 ## Modelling 
-x = {-b \pm \sqrt{b^2-4ac} \over 2a}.
+\\[ x = {-b \pm \sqrt{b^2-4ac} \over 2e} \\]
