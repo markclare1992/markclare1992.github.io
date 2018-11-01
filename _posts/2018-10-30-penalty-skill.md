@@ -57,7 +57,7 @@ We have $$N$$ players in the dataset, each player $$n \in N$$ has $$y_{n}$$ goal
 
 ### Complete Pooling
 We model each penalty as having the same chance of success $$\phi \in [0,1]$$ 
-
+Using the following stan code, we can fit a model in R.
 ```
 data {
   int<lower=0> N;           // number players
@@ -70,4 +70,16 @@ parameters {
 model {
   y ~ binomial(K, phi);
 }
+```
+
+```
+N <- dim(df)[1]
+K <- df$K
+y <- df$y
+M <- 10000;
+fit_pool <- stan("pool.stan", data=c("N", "K", "y"),
+                 iter=(M / 2), chains=4);
+
+ss_pool <- rstan::extract(fit_pool);
+print(fit_pool, c("phi"), probs=c(0.1, 0.5, 0.9));
 ```
