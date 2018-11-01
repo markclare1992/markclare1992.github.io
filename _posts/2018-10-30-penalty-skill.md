@@ -60,7 +60,7 @@ We model each penalty as having the same chance of success $$\phi \in [0,1]$$
 
 ```
 data {
-  int<lower=0> N;           // player
+  int<lower=0> N;           // number players
   int<lower=0> K[N];        // attempts (trials)
   int<lower=0> y[N];        // goals (successes)
 }
