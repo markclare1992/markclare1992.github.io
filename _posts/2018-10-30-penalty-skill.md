@@ -49,4 +49,4 @@ The mean conversion for a player is 69.4%, there is a lot of players in the data
 </figure>
 
 ## Modelling 
-$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
+We have $$N$$ players
