@@ -49,4 +49,4 @@ The mean conversion for a player is 69.4%, there is a lot of players in the data
 </figure>
 
 ## Modelling 
-We have $$N$$ players in the dataset, each player has $$y_{n}$$ goals (successes) out of $$k_{n}$$ penalty attempts (trials).
+We have $$N$$ players in the dataset, each player $$n \in N$$ has $$y_{n}$$ goals (successes) out of $$k_{n}$$ penalty attempts (trials).
