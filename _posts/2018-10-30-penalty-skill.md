@@ -50,5 +50,10 @@ The mean conversion for a player is 69.4%, there is a lot of players in the data
 
 ## Modelling 
 We have $$N$$ players in the dataset, each player $$n \in N$$ has $$y_{n}$$ goals (successes) out of $$k_{n}$$ penalty attempts (trials).
+
 ### Assumptions
-- We assume that penalty taking is a skill
+- That penalty taking is a skill.
+- That each players penalty attempts are independent Bernoulli trials.
+
+### Complete Pooling
+We model each penalty as having the same chance of success $$\phi \in [0,1]$$ 
