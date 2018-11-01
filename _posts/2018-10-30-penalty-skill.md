@@ -70,7 +70,4 @@ parameters {
 model {
   y ~ binomial(K, phi);
 }
-generated quantities { 
-  vector<lower=0, upper=1>[N] theta;  // chance-of-success
-}
 ```
