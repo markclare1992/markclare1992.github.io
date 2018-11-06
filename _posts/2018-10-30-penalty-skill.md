@@ -72,13 +72,14 @@ fit_pool <- stan("pool.stan", data=c("N", "K", "y"),
 ss_pool <- rstan::extract(fit_pool);
 print(fit_pool, c("phi"), probs=c(0.1, 0.5, 0.9));
 ```
+```
 Inference for Stan model: pool.
 4 chains, each with iter=5000; warmup=2500; thin=1; 
 post-warmup draws per chain=2500, total post-warmup draws=10000.
 
     mean se_mean sd  10%  50%  90% n_eff Rhat
 phi 0.76       0  0 0.75 0.76 0.76  3398    1
-
+```
 
 
 
