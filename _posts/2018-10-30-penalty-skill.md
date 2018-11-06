@@ -85,6 +85,31 @@ phi 0.76       0  0 0.75 0.76  0.77  3398    1
 We get a posterior mean of 0.76 with a 95% central posterior interval of (0.75,0.77).
 Intuitively it feels wrong to assume that each player has the same chance of scoring a penalty, but the complete pooling model is a good starting point.
 
+### Partial Pooling / Hierachal Modelling
+We assume that each player is part of a population, i.e penalty takers.  The properties of the population as a whole are estimated, as are that of the player.  Uncertainty based off the different number of attempts for each player will be accounted for.
+
+I used a non-centred, log-odds parameterization (as there are a lot of players with few attempts).  Full code is at the bottom of post.
+
+### R Code
+```
+fit_hier_logit <- stan("hier_logit_nc.stan", data=c("N", "K", "y"),
+                       iter=(M / 2), chains=4,
+                       control=list(stepsize=0.01, adapt_delta=0.99));
+ss_hier_logit <- rstan::extract(fit_hier_logit)
+print(fit_hier_logit, c( "mu", "sigma"), probs=c(0.1, 0.5, 0.9));
+```
+
+```
+Inference for Stan model: hier_logit_nc.
+4 chains, each with iter=5000; warmup=2500; thin=1; 
+post-warmup draws per chain=2500, total post-warmup draws=10000.
+
+      mean se_mean   sd  10%  50%  90% n_eff Rhat
+mu    1.13       0 0.03 1.10 1.13 1.17 13061 1.00
+sigma 0.18       0 0.09 0.06 0.19 0.29   676 1.01
+```
+
+
 
 
 ### Stan Code (Complete Pooling)
@@ -99,5 +124,31 @@ parameters {
 }
 model {
   y ~ binomial(K, phi);
+}
+```
+
+## Stan Code (Partial Pooling)
+```
+data {
+  int<lower=0> N;           // number players
+  int<lower=0> K[N];        // attempts (trials)
+  int<lower=0> y[N];        // goals (successes)
+}
+parameters {
+  real mu;                       // population mean of success log-odds
+  real<lower=0> sigma;           // population sd of success log-odds
+  vector[N] alpha_std;           // success log-odds
+}
+model {
+  mu ~ normal(1, 1);                             // hyperprior
+  sigma ~ normal(0, 1);                           // hyperprior
+  alpha_std ~ normal(0, 1);                       // prior
+  y ~ binomial_logit(K, mu + sigma * alpha_std);  // likelihood
+}
+generated quantities {
+  vector[N] theta;    // chance of success
+  for (n in 1:N)
+    theta[n] = inv_logit(mu + sigma * alpha_std[n]); 
+    //calculate success for non centred parameterization
 }
 ```
