@@ -70,18 +70,20 @@ fit_pool <- stan("pool.stan", data=c("N", "K", "y"),
                  iter=(M / 2), chains=4);
 
 ss_pool <- rstan::extract(fit_pool);
-print(fit_pool, c("phi"), probs=c(0.1, 0.5, 0.9));
+print(fit_pool, c("phi"), probs=c(0.025, 0.5, 0.975));
 ```
+
 ```
 Inference for Stan model: pool.
 4 chains, each with iter=5000; warmup=2500; thin=1; 
 post-warmup draws per chain=2500, total post-warmup draws=10000.
 
-    mean se_mean sd  10%  50%  90% n_eff Rhat
-phi 0.76       0  0 0.75 0.76 0.76  3398    1
+    mean se_mean sd 2.5%  50% 97.5% n_eff Rhat
+phi 0.76       0  0 0.75 0.76  0.77  3398    1
 ```
 
-
+We get a posterior mean of 0.76 with a 95% central posterior interval of (0.75,0.77).
+Intuitively it feels wrong to assume that each player has the same chance of scoring a penalty, but the complete pooling model is a good starting point.
 
 
 
