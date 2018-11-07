@@ -138,6 +138,11 @@ Each penalty is modelled as an event that depends on both the penalty takers ski
 
 I chose to fit the final model using pymc3, using the code shown at the bottom.
 
+The inferred means from the final model are close to the actual sample mean as shown by the following plot.
+
+<figure class='centre'>
+	<a href="/assets/images/final_model_ppc.png"><img src="/assets/images/final_model_ppc.png"></a>
+</figure>
 
 
 ## Issues / Further improvements
