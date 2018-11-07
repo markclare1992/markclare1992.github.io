@@ -85,6 +85,10 @@ phi 0.76       0  0 0.75 0.76  0.77  3398    1
 We get a posterior mean of 0.76 with a 95% central posterior interval of (0.75,0.77).
 Intuitively it feels wrong to assume that each player has the same chance of scoring a penalty, but the complete pooling model is a good starting point.
 
+<figure class='centre'>
+	<a href="/assets/images/complete_pooling.jpeg"><img src="/assets/images/complete_pooling.jpeg"></a>
+</figure>
+
 ### Partial Pooling / Hierachal Modelling
 We assume that each player is part of a population, i.e penalty takers.  The properties of the population as a whole are estimated, as are that of the player.  Uncertainty based off the different number of attempts for each player will be accounted for.
 
