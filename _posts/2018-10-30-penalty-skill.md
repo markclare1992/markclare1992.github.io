@@ -160,6 +160,8 @@ Extracting the taker and goalkeeper ratings and plotting gives the following.
 	<a href="/assets/images/final_model_keepers.png"><img src="/assets/images/final_model_keepers.png"></a>
 </figure>
 
+There is still a lot of uncertainty in the estimates for both takers and keepers, even for those with a large number of attempts.
+
 ## Issues / Further improvements
 - When a penalty is missed, the taker is punished and the goalkeeper is rewarded.  If a player scuffs their shot or completely mishits a penalty is the goalkeeper partly responsible?
 - Does home advantage have any effect on penalty taking?
