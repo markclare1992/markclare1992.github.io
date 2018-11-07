@@ -99,7 +99,7 @@ We can convert the fitted parameters back into chance of success, the plot below
 <figure class='centre'>
 	<a href="/assets/images/partial_pooling.jpeg"><img src="/assets/images/partial_pooling.jpeg"></a>
 </figure>
-The posteriors for each player $$theta_{n}$$ are wide, meaning there is large uncertainty in the estimates of scoring a penalty (chance of success) on a player by player basis.
+The posteriors for each player $$\theta_{n}$$ are wide, meaning there is large uncertainty in the estimates of scoring a penalty (chance of success) on a player by player basis.
 
 ### R Code
 ```
