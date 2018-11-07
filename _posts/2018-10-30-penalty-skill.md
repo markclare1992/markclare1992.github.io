@@ -144,7 +144,7 @@ The inferred means from the final model are close to the actual sample mean as s
 	<a href="/assets/images/final_model_ppc.png"><img src="/assets/images/final_model_ppc.png"></a>
 </figure>
 
-The traceplot for the final model is also shown.
+The traceplot for the final model is also shown.  The plots for alpha_std and alpha_std_gk are busy as these are the parameter estimates for each player, and there are a lot of players in the dataset.
 
 <figure class='centre'>
 	<a href="/assets/images/final_model_trace.png"><img src="/assets/images/final_model_trace.png"></a>
