@@ -144,6 +144,12 @@ The inferred means from the final model are close to the actual sample mean as s
 	<a href="/assets/images/final_model_ppc.png"><img src="/assets/images/final_model_ppc.png"></a>
 </figure>
 
+The traceplot for the final model is also shown.
+
+<figure class='centre'>
+	<a href="/assets/images/final_model_trace.png"><img src="/assets/images/final_model_trace.png"></a>
+</figure>
+
 
 ## Issues / Further improvements
 - When a penalty is missed, the taker is punished and the goalkeeper is rewarded.  If a player scuffs their shot or completely mishits a penalty is the goalkeeper partly responsible?
