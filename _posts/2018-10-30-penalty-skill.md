@@ -93,14 +93,6 @@ Intuitively it feels wrong to assume that each player has the same chance of sco
 We assume that each player is part of a population, i.e penalty takers.  The properties of the population as a whole are estimated, as are that of the player.  Uncertainty based off the different number of attempts for each player will be accounted for.
 
 I used a non-centred, log-odds parameterization (as there are a lot of players with few attempts).  Full code is at the bottom of post.
-
-We can convert the fitted parameters back into chance of success, the plot below shows a subset of players.
-
-<figure class='centre'>
-	<a href="/assets/images/partial_pooling.jpeg"><img src="/assets/images/partial_pooling.jpeg"></a>
-</figure>
-The posteriors for each player $$\theta_{n}$$ are wide, meaning there is large uncertainty in the estimates of scoring a penalty (chance of success) on a player by player basis.
-
 ### R Code
 ```
 fit_hier_logit <- stan("hier_logit_nc.stan", data=c("N", "K", "y"),
@@ -119,8 +111,12 @@ post-warmup draws per chain=2500, total post-warmup draws=10000.
 mu    1.13       0 0.03 1.10 1.13 1.17 13061 1.00
 sigma 0.18       0 0.09 0.06 0.19 0.29   676 1.01
 ```
+We can convert the fitted parameters back into chance of success, the plot below shows a subset of players.
 
-
+<figure class='centre'>
+	<a href="/assets/images/partial_pooling.jpeg"><img src="/assets/images/partial_pooling.jpeg"></a>
+</figure>
+The posteriors for each player $$\theta_{n}$$ are wide, meaning there is large uncertainty in the estimates of scoring a penalty (chance of success) on a player by player basis.
 
 
 ### Stan Code (Complete Pooling)
