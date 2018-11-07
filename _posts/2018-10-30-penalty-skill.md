@@ -123,7 +123,7 @@ The posteriors for each player $$\theta_{n}$$ are wide, meaning there is large u
 By just using the total number of successes $$y_{n}$$ out of $$k_{n}$$ attempts, information is being lost.  By modelling each penalty as a success or failure, and considering the goalkeeper, we can add information and hopefully improve the model.
 
 ### Assumptions
-- Penalty taking and penalty saving are skills
+- Penalty taking and penalty saving are skills.
 - Each players penalty attempts are independent Bernoulli trials.
 - Each goalkeepers penalty save attempts are independent Bernoulli trials.
 - The players ability do not vary with respect to time.
