@@ -2,7 +2,7 @@
 title: "How bad is Riyad Mahrez at penalties?"
 date: 2018-10-30
 layout: single
-excerpt: Modelling penalties to look at player skill.
+excerpt: Bayesian modelling of penalties.
 header:
   image: "assets/images/mahrez.jpg"
   filter: 0.5
