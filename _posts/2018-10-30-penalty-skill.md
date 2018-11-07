@@ -57,7 +57,7 @@ We have $$N$$ players in the dataset, each player $$n \in N$$ has $$y_{n}$$ goal
 
 ### Complete Pooling
 We model each penalty as having the same chance of success $$\phi \in [0,1]$$ 
-Using the following stan code, we can fit a model in R.
+Using stan (code at the bottom of post), we can fit a model in R.
 
 
 ### R Code
@@ -132,6 +132,23 @@ By just using the total number of successes $$y_{n}$$ out of $$k_{n}$$ attempts,
 
 Each penalty is modelled as an event that depends on both the penalty takers skill and the goalkeepers skill.
 
+<figure class='centre'>
+	<a href="/assets/images/final_model.png"><img src="/assets/images/final_model.png"></a>
+</figure>
+
+I chose to fit the final model using pymc3, using the code shown at the bottom.
+
+
+
+## Issues / Further improvements
+- When a penalty is missed, the taker is punished and the goalkeeper is rewarded.  If a player scuffs their shot or completely mishits a penalty is the goalkeeper partly responsible?
+- Does home advantage have any effect on penalty taking?
+- Does game state/ penalty shootout order affect the probability of success?
+- Can penalty placement data be incorporated to improve modelling? (There is co-ordinate data for where the ball crosses the goalmouth plane)
+- Is it okay to assume penalty taking/saving ability stays constant with regards to time? Do players get better at taking penalties the more experience they gain?
+- Does penalty taking ability correlate with a players finishing ability?
+
+
 
 ### Stan Code (Complete Pooling)
 ```
@@ -172,4 +189,20 @@ generated quantities {
     theta[n] = inv_logit(mu + sigma * alpha_std[n]); 
     //calculate success for non centred parameterization
 }
+```
+
+### Python code
+```
+with Model() as final_model:
+    mu = Normal('mu', 1, 1, shape=1)
+    BoundedNormal = Bound(Normal, lower=0.0)
+    sigma = BoundedNormal('sigma', mu=0, sd=1, shape=1)
+    sigma_gk = BoundedNormal('sigma_gk', mu=0, sd=1, shape=1)
+    alpha_std = Normal('alpha_std', 0, 1, shape=len(takers))
+    alpha_std_gk = Normal('alpha_std_gk', 0, 1, shape=len(keepers))
+    p = tt.nnet.sigmoid(mu + sigma*alpha_std[obs_tak] - sigma_gk*alpha_std_gk[obs_keep])
+    Bernoulli('observed_outcome', p=p, observed=obs_wl)
+
+with final_model:
+    trace = sample(2000, tune=1000, nuts_kwargs={'target_accept': 0.95})
 ```
