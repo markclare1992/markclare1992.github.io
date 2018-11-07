@@ -94,6 +94,12 @@ We assume that each player is part of a population, i.e penalty takers.  The pro
 
 I used a non-centred, log-odds parameterization (as there are a lot of players with few attempts).  Full code is at the bottom of post.
 
+We can convert the fitted parameters back into chance of success, the plot below shows a subset of players.
+
+<figure class='centre'>
+	<a href="/assets/images/partial_pooling.jpeg"><img src="/assets/images/partial_pooling.jpeg"></a>
+</figure>
+
 ### R Code
 ```
 fit_hier_logit <- stan("hier_logit_nc.stan", data=c("N", "K", "y"),
