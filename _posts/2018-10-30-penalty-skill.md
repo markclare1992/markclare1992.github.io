@@ -52,8 +52,8 @@ The mean conversion for a player is 69.4%, there is a lot of players in the data
 We have $$N$$ players in the dataset, each player $$n \in N$$ has $$y_{n}$$ goals (successes) out of $$k_{n}$$ penalty attempts (trials).
 
 ### Assumptions
-- That penalty taking is a skill.
-- That each players penalty attempts are independent Bernoulli trials.
+- Penalty taking is a skill.
+- Each players penalty attempts are independent Bernoulli trials.
 
 ### Complete Pooling
 We model each penalty as having the same chance of success $$\phi \in [0,1]$$ 
@@ -118,6 +118,20 @@ We can convert the fitted parameters back into chance of success, the plot below
 </figure>
 The posteriors for each player $$\theta_{n}$$ are wide, meaning there is large uncertainty in the estimates of scoring a penalty (chance of success) on a player by player basis.
 
+## Improvements
+
+By just using the total number of successes $$y_{n}$$ out of $$k_{n}$$ attempts, information is being lost.  By modelling each penalty as a success or failure, and considering the goalkeeper, we can add information and hopefully improve the model.
+
+### Assumptions
+- Penalty taking and penalty saving are skills
+- Each players penalty attempts are independent Bernoulli trials.
+- Each goalkeepers penalty save attempts are independent Bernoulli trials.
+- The players ability do not vary with respect to time.
+
+### Model
+
+Each penalty is modelled as an event that depends on both the penalty takers skill and the goalkeepers skill.
+
 
 ### Stan Code (Complete Pooling)
 ```
@@ -134,7 +148,7 @@ model {
 }
 ```
 
-## Stan Code (Partial Pooling)
+### Stan Code (Partial Pooling)
 ```
 data {
   int<lower=0> N;           // number players
