@@ -162,6 +162,19 @@ Extracting the taker and goalkeeper ratings and plotting gives the following.
 
 There is still a lot of uncertainty in the estimates for both takers and keepers, even for those with a large number of attempts.
 
+## Predictions
+
+we can calculate an estimate for the estimates for the Manchester City players vs Alisson.
+
+| Player  | %   |
+|---------|:----|
+|Mahrez   |0.745|
+|Jesus    |0.746|
+|Aguero   |0.755|
+
+Aguero was not on the pitch at the time of the penalty, and using the fitted model, there is minimal difference between Mahrez and Jesus taking the penalty.
+
+
 ## Issues / Further improvements
 - When a penalty is missed, the taker is punished and the goalkeeper is rewarded.  If a player scuffs their shot or completely mishits a penalty is the goalkeeper partly responsible?
 - Does home advantage have any effect on penalty taking?
@@ -169,7 +182,7 @@ There is still a lot of uncertainty in the estimates for both takers and keepers
 - Can penalty placement data be incorporated to improve modelling? (There is co-ordinate data for where the ball crosses the goalmouth plane)
 - Is it okay to assume penalty taking/saving ability stays constant with regards to time? Do players get better at taking penalties the more experience they gain?
 - Does penalty taking ability correlate with a players finishing ability?
-- Look at re-parameterizing or optimizing to minimize prediction error on a new penalty taker/goalkeeper.
+- Look at re-parameterizing or optimizing to minimize prediction error on a new penalty taker/goalkeeper. (Would a player with no history of penalty taking have had a higher probability of scoring than Mahrez/Jesus?)
 
 
 ### Stan Code (Complete Pooling)
