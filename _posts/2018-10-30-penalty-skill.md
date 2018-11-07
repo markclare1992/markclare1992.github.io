@@ -164,7 +164,7 @@ There is still a lot of uncertainty in the estimates for both takers and keepers
 
 ## Predictions
 
-we can calculate an estimate for the estimates for the Manchester City players vs Alisson.
+We can calculate an estimate for the estimates for the Manchester City players vs Alisson.
 
 | Player  | %   |
 |---------|:----|
