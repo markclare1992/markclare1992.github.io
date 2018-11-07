@@ -150,6 +150,15 @@ The traceplot for the final model is also shown.  The plots for alpha_std and al
 	<a href="/assets/images/final_model_trace.png"><img src="/assets/images/final_model_trace.png"></a>
 </figure>
 
+Extracting the taker and goalkeeper ratings and plotting gives the following.
+
+<figure class='centre'>
+	<a href="/assets/images/final_model_takers.png"><img src="/assets/images/final_model_takers.png"></a>
+</figure>
+
+<figure class='centre'>
+	<a href="/assets/images/final_model_keepers.png"><img src="/assets/images/final_model_keepers.png"></a>
+</figure>
 
 ## Issues / Further improvements
 - When a penalty is missed, the taker is punished and the goalkeeper is rewarded.  If a player scuffs their shot or completely mishits a penalty is the goalkeeper partly responsible?
