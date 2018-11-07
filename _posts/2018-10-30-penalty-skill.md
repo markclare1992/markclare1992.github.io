@@ -226,7 +226,7 @@ generated quantities {
 }
 ```
 
-### Python code
+### Python Code
 ```
 with Model() as final_model:
     mu = Normal('mu', 1, 1, shape=1)
