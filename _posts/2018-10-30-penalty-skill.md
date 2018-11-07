@@ -158,7 +158,7 @@ The traceplot for the final model is also shown.
 - Can penalty placement data be incorporated to improve modelling? (There is co-ordinate data for where the ball crosses the goalmouth plane)
 - Is it okay to assume penalty taking/saving ability stays constant with regards to time? Do players get better at taking penalties the more experience they gain?
 - Does penalty taking ability correlate with a players finishing ability?
-
+- Look at re-parameterizing or optimizing to minimize prediction error on a new penalty taker/goalkeeper.
 
 
 ### Stan Code (Complete Pooling)
