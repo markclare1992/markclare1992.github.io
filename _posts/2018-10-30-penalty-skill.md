@@ -56,7 +56,7 @@ We have $$N$$ players in the dataset, each player $$n \in N$$ has $$y_{n}$$ goal
 - Each players penalty attempts are independent Bernoulli trials.
 
 ### Complete Pooling
-We model each penalty as having the same chance of success $$\phi \in [0,1]$$ 
+We model each penalty as having the same chance of success $$\phi \in [0,1]$$.
 Using stan (code at the bottom of post), we can fit a model in R.
 
 
