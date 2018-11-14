@@ -186,7 +186,7 @@ Aguero was not on the pitch at the time of the penalty, and using the fitted mod
 
 
 ### Stan Code (Complete Pooling)
-``` stan 
+```
 data {
   int<lower=0> N;           // number players
   int<lower=0> K[N];        // attempts (trials)
@@ -201,7 +201,7 @@ model {
 ```
 
 ### Stan Code (Partial Pooling)
-``` stan
+``` 
 data {
   int<lower=0> N;           // number players
   int<lower=0> K[N];        // attempts (trials)
