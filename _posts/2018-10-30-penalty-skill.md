@@ -61,7 +61,7 @@ Using stan (code at the bottom of post), we can fit a model in R.
 
 
 ### R Code
-```
+``` r
 N <- dim(df)[1]
 K <- df$K
 y <- df$y
@@ -94,7 +94,7 @@ We assume that each player is part of a population, i.e penalty takers.  The pro
 
 I used a non-centred, log-odds parameterization (as there are a lot of players with few attempts).  Full code is at the bottom of post.
 ### R Code
-```
+``` r
 fit_hier_logit <- stan("hier_logit_nc.stan", data=c("N", "K", "y"),
                        iter=(M / 2), chains=4,
                        control=list(stepsize=0.01, adapt_delta=0.99));
@@ -186,7 +186,7 @@ Aguero was not on the pitch at the time of the penalty, and using the fitted mod
 
 
 ### Stan Code (Complete Pooling)
-```
+``` stan 
 data {
   int<lower=0> N;           // number players
   int<lower=0> K[N];        // attempts (trials)
@@ -201,7 +201,7 @@ model {
 ```
 
 ### Stan Code (Partial Pooling)
-```
+``` stan
 data {
   int<lower=0> N;           // number players
   int<lower=0> K[N];        // attempts (trials)
@@ -227,7 +227,7 @@ generated quantities {
 ```
 
 ### Python Code
-```
+``` python
 with Model() as final_model:
     mu = Normal('mu', 1, 1, shape=1)
     BoundedNormal = Bound(Normal, lower=0.0)
