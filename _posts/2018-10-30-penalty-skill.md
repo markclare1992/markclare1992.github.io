@@ -6,7 +6,7 @@ excerpt: Bayesian modelling of penalties.
 header:
   image: "assets/images/mahrez.jpg"
   filter: 0.5
-  teaser: "assets/images/pen.jpg"
+  teaser: "/assets/images/partial_pooling.jpeg"
 categories:
   - Football
 tags:
