@@ -18,7 +18,7 @@ tags:
 comments: true
 ---
 
-Data for the post is available ([**here**](https://raw.githubusercontent.com/markclare1992/markclare1992.github.io/master/assets/pens.csv)) (player names have been removed)
+Data for the post is available [**here**](https://raw.githubusercontent.com/markclare1992/markclare1992.github.io/master/assets/pens.csv) (player names have been removed)
 
 ## R & Stan
 ### Load packages
