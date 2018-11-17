@@ -296,8 +296,8 @@ and Rhat is the potential scale reduction factor on split chains (at
 convergence, Rhat=1).
 ```
 
-Using bayesplot again we can look at the distributions for players.  The fitted parameters can be transformed back into $$\theta_{n}$$ chance of success, using the inverse logit transform.
-I chose a random subset of players (thetas), as there are a lot of players and it's impossible to plot them all.
+Using bayesplot again we can look at the distributions for players.  The fitted parameters can be transformed back into $$\theta_{n}$$, i.e chance of success for players, using the inverse logit transform.
+I chose a random subset of players as there are a lot of players and it's impossible to plot them all.
 
 ```
 mcmc_areas(posterior_hier, pars=c('theta[1]',
