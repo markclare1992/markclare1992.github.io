@@ -123,7 +123,7 @@ df_player %>%
 ```
 There is 1066 players in the dataset that have taken only 1 penalty, this is why the conversion graph looks odd.
 It's fairly easy to create a graph that provides some insight.  
-By filtering the dataset for players that have more than 10 attempts, and making the x-axis [0,1] a clearer graph is created.
+By filtering the dataset for players that have more than 10 attempts, and making the x-axis $$[0,1]$$ a clearer graph is created.
 
 ``` r
 ggplot(aes(x=conversion), data=df_player %>% filter(n>10)) + 
