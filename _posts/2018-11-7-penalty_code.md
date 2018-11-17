@@ -221,7 +221,7 @@ mcmc_areas(posterior, pars='phi',prob=.975)
 	<a href="/assets/images/first_bayesplot.jpeg"><img src="/assets/images/first_bayesplot.jpeg"></a>
 </figure>
 
-Again it's fairly easy to customise and improve the look of the graphs. [**More info**](http://mc-stan.org/bayesplot/reference/bayesplot_theme_get.html)
+Again it's fairly easy to customise and improve the look of the graphs. [**More information.**](http://mc-stan.org/bayesplot/reference/bayesplot_theme_get.html)
 
 ``` r
 bayesplot_theme_set(fte_theme())
