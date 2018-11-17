@@ -74,12 +74,13 @@ df %>%
 #> 2 TRUE     7134 0.757
 ```
 
-Grouping by taker_id we can see the breakdown by individual players.
+Grouping by taker_id we can see the conversion for individual players.
 
 ``` r
-df %>% 
+df_player <- df %>% 
   group_by(taker_id) %>% 
-  summarise(n = n(), conversion = mean(is_goal)) %>%
+  summarise(n = n(), conversion = mean(is_goal))
+df_player %>%
   arrange(-n) %>% 
   head(5)
 #> # A tibble: 5 x 3
@@ -92,12 +93,12 @@ df %>%
 #> 5 PEjpr2x4    40      0.8
 ```
 
-Plotting the conversion percentages for players
+I used ggplot to plot the conversion percentages for players.
 
 ``` r
-df_player <- df %>% 
-  group_by(taker_id) %>% 
-  summarise(n = n(), conversion = mean(is_goal))
+
+
+
 ggplot(aes(x=conversion), data=df_player) + 
   geom_histogram()
 ```
