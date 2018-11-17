@@ -18,7 +18,7 @@ tags:
 comments: true
 ---
 
-Data for the post is available here (player names have been removed)
+Data for the post is available ([**here**]('https://raw.githubusercontent.com/markclare1992/markclare1992.github.io/master/assets/pens.csv')) (player names have been removed)
 
 ## R & Stan
 ### Load packages
@@ -60,7 +60,7 @@ head(df)
 #> 6 gKpON8x  jL85E       46     33 3EeX1OL4 KZgnMpEp  right TRUE
 ```
 
-By grouping by whether or not the penalty is a goal we can look at the average conversion.
+Grouping by whether or not the penalty is a goal we can look at the average conversion.
 
 ``` r
 df %>% 
