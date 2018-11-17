@@ -121,10 +121,7 @@ df_player %>%
 #> 2 TRUE      1066 0.419
 ```
 There is 1066 players in the dataset that have taken only 1 penalty, this is why the conversion graph looks odd.
-
 It's fairly easy to create a graph that provides some insight.  
-
-
 By filtering the dataset for players that have more than 10 attempts, and making sure the x-axis goes from 0 to 1, a clearer graph is created.
 
 ``` r
@@ -137,7 +134,7 @@ ggplot(aes(x=conversion), data=df_player %>% filter(n>10)) +
 	<a href="/assets/images/second_conversion_graph.jpeg"><img src="/assets/images/second_conversion_graph.jpeg"></a>
 </figure>
 
-With ggplot2 it's fairly easy to quickly improve the aesthetics of a graph.  I like using a five-thirty-eight style theme from here https://github.com/KieranHunt/dpi-algorithms-r/blob/master/fte-theme.R
+With ggplot2 it's fairly easy to quickly improve the aesthetics of a graph.  I like using a five-thirty-eight style theme from [**here**](https://github.com/KieranHunt/dpi-algorithms-r/blob/master/fte-theme.R).
 Adding titles, axis labels and a horizontal line on the x axis creates the final graph.
 
 ``` r
@@ -161,7 +158,6 @@ ggplot(aes(x=conversion), data=df_player %>% filter(n>10)) +
 
 ### Complete Pooling
 I started off the modelling process using stan in Rstudio (using the rstan package)
-
 We have $$N$$ players in the dataset, each player $$n \in N$$ has $$y_{n}$$ goals (successes) out of $$k_{n}$$ penalty attempts (trials).
 We model each penalty as having the same chance of success $$\phi \in [0,1]$$, hence we assume a uniform prior on $$\phi$$
 With the assumption that each players penalty attempts are independent Bernoulli trials and that each player is independent we can use the following stan and R code to fit the distributions.
@@ -224,7 +220,7 @@ mcmc_areas(posterior, pars='phi',prob=.975)
 	<a href="/assets/images/first_bayesplot.jpeg"><img src="/assets/images/first_bayesplot.jpeg"></a>
 </figure>
 
-Again it's fairly easy to customise and improve the look of the graphs. More info http://mc-stan.org/bayesplot/reference/bayesplot_theme_get.html
+Again it's fairly easy to customise and improve the look of the graphs. [**More info**](http://mc-stan.org/bayesplot/reference/bayesplot_theme_get.html)
 
 ``` r
 bayesplot_theme_set(fte_theme())
@@ -246,7 +242,7 @@ We assume that each player is part of a population, i.e penalty takers. The prop
 Rather than modelling for chance of success $$\theta_{n} in [0,1]$$, we model for log-odds $$\alpha_{n}$$. The following logit transform is applied.
 $$\alpha_{n} = log \theta_{n} / 1-\theta_{n}$$
 I used a non-centred parameterization as there are lots of players with small counts of penalties taken, using a centred parameterization here would result in a very slow fitting process as the samplers would struggle to explore parameter space.
-A more in-depth explanation of the maths is available from this extremely useful blogpost, from where I used a lot of ideas. http://mc-stan.org/users/documentation/case-studies/pool-binary-trials.html
+A more in-depth explanation of the maths is available from this extremely useful [**blogpost**](http://mc-stan.org/users/documentation/case-studies/pool-binary-trials.html), from where I used a lot of ideas. 
 
 ### Stan Code (hier_logit_nc.stan)
 
@@ -321,7 +317,7 @@ mcmc_areas(posterior_hier, pars=c('theta[1]',
 	<a href="/assets/images/players_bayesplot.jpeg"><img src="/assets/images/players_bayesplot.jpeg"></a>
 </figure>
 
-## Python/PYMC3
+## Python / PYMC3
 
 I transferred to python to fit the final model.
 Import the necessary packages.
@@ -396,7 +392,7 @@ plt.show()
 ```
 
 <figure class='centre'>
-	<a href="/assets/images/traceplot.png"><img src="/assets/images/traceplot.png"></a>
+	<a href="/assets/images/final_model_trace.png"><img src="/assets/images/final_model_trace.png"></a>
 </figure>
 
 You can sample from the fitted distribution and compare how close the inferred means are to the actual sample mean.  This shows how well the model is reproducing patterns found in the real data.
