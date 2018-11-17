@@ -241,7 +241,7 @@ mcmc_areas(posterior, pars='phi',prob=.975) +
 Whilst the complete pooling model is a good starting point, it doesn't seem realistic to assume that each player would have the same probability of scoring a penalty.
 We assume that each player is part of a population, i.e penalty takers. The properties of the population as a whole are estimated, as are that of the player. Uncertainty based off the different number of attempts for each player will be accounted for.
 Rather than modelling for chance of success $$\theta_{n} \in [0,1]$$, we model for log-odds $$\alpha_{n}$$. The following logit transform is applied
-$$\alpha_{n} = log (\theta_{n}) / 1 - \theta_{n}$$.
+$$\alpha_{n} = log (\theta_{n}) \over 1 - \theta_{n}$$.
 I used a non-centred parameterization as there are lots of players with small counts of penalties taken, using a centred parameterization here would result in a very slow fitting process as the samplers would struggle to explore parameter space.
 A more in-depth explanation of the maths is available from this extremely useful [**blogpost**](http://mc-stan.org/users/documentation/case-studies/pool-binary-trials.html), from where I used a lot of ideas. 
 
@@ -354,7 +354,7 @@ obs_wl = dat['is_goal'].values
 
 Define the model using pymc3 as follows, the standard deviation parameters (sigma and sigma_gk) have to be restricted to positive only values here because of the subtraction of the taker and keeper skill.
 I chose to use a different standard deviation paramter for takers and goalkeepers, however a single parameter can be used for both groups and a similar result is found.
-I used the sigmoid function from the theano library to ensure that $$p in [0,1]$$.
+I used the sigmoid function from the theano library to ensure that $$p \in [0,1]$$.
 
 ``` python
 with Model() as final_model:
