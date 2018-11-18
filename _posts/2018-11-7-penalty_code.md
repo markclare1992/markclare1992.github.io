@@ -65,13 +65,13 @@ Grouping by whether or not the penalty is a goal we can look at the average conv
 ``` r
 df %>% 
   group_by(is_goal) %>% 
-  summarise(n = n()) %>%
-  mutate("%" = n/sum(n))
+  summarise(n_pens = n()) %>%
+  mutate("%" = n_pens/sum(n_pens))
 #> # A tibble: 2 x 3
-#>   is_goal     n   `%`
-#>   <lgl>   <int> <dbl>
-#> 1 FALSE    2290 0.243
-#> 2 TRUE     7134 0.757
+#>   is_goal n_pens   `%`
+#>   <lgl>    <int> <dbl>
+#> 1 FALSE     2290 0.243
+#> 2 TRUE      7134 0.757
 ```
 
 Grouping by taker_id we can see the conversion for individual players.
@@ -79,26 +79,23 @@ Grouping by taker_id we can see the conversion for individual players.
 ``` r
 df_player <- df %>% 
   group_by(taker_id) %>% 
-  summarise(n = n(), conversion = mean(is_goal))
+  summarise(n_pens = n(), conversion = mean(is_goal))
 df_player %>%
-  arrange(-n) %>% 
+  arrange(-n_pens) %>% 
   head(5)
 #> # A tibble: 5 x 3
-#>   taker_id     n conversion
-#>   <chr>    <int>      <dbl>
-#> 1 Bx47oAg2    87      0.828
-#> 2 QEZ1P0Le    58      0.793
-#> 3 pEPvQ2xM    55      0.873
-#> 4 PLlZq3gM    44      0.75 
-#> 5 PEjpr2x4    40      0.8
+#>   taker_id n_pens conversion
+#>   <chr>     <int>      <dbl>
+#> 1 Bx47oAg2     87      0.828
+#> 2 QEZ1P0Le     58      0.793
+#> 3 pEPvQ2xM     55      0.873
+#> 4 PLlZq3gM     44      0.75 
+#> 5 PEjpr2x4     40      0.8
 ```
 
 I used ggplot to plot the conversion percentages for players.
 
 ``` r
-
-
-
 ggplot(aes(x=conversion), data=df_player) + 
   geom_histogram()
 ```
@@ -111,15 +108,15 @@ The graph isn't very clear and doesn't really show whats happening.  You can see
 
 
 ``` r
-df_player %>%
-  group_by(n==1) %>%
-  summarise(n=n()) %>%
-  mutate("%"=n/sum(n))
-#> # A tibble: 2 x 3
-#>   `n == 1`     n   `%`
-#>   <lgl>    <int> <dbl>
-#> 1 FALSE     1476 0.581
-#> 2 TRUE      1066 0.419
+df_player %>% 
+  group_by(n_pens) %>% 
+  summarise(n = n()) %>% 
+  mutate("%" = n/sum(n)) %>% 
+  head(5)
+#> # A tibble: 5 x 3
+#>   n_pens     n    `%`
+#>    <int> <int>  <dbl>
+#> 1      1  1066 
 ```
 There is 1066 players in the dataset that have taken only 1 penalty, this is why the conversion graph looks odd.
 It's fairly easy to create a graph that provides some insight.  
@@ -221,11 +218,11 @@ mcmc_areas(posterior, pars='phi',prob=.975)
 	<a href="/assets/images/first_bayesplot.jpeg"><img src="/assets/images/first_bayesplot.jpeg"></a>
 </figure>
 
-Again it's fairly easy to customise and improve the look of the graphs. [**More information.**](http://mc-stan.org/bayesplot/reference/bayesplot_theme_get.html)
+Again it's fairly easy to customise and improve the look of the graphs [**more information.**](http://mc-stan.org/bayesplot/reference/bayesplot_theme_get.html)
 
 ``` r
 bayesplot_theme_set(fte_theme())
-mcmc_areas(posterior, pars='phi',prob=.975) + 
+mcmc_areas(posterior, pars='phi',prob=.95) + 
   geom_hline(yintercept = 1)+
   labs(title="Posterior distributions",
        subtitle="with medians and 95% intervals",
@@ -335,7 +332,8 @@ import matplotlib.pyplot as plt
 Read in the data and convert the taker_id, and keeper_id column to categorical variables.  Create arrays of unique takers and keepers from the dataset.
 
 ``` python
-dat = pd.read_csv('pens_r.csv')
+url = 'https://raw.githubusercontent.com/markclare1992/markclare1992.github.io/master/assets/pens.csv'
+dat = pd.read_csv(url)
 dat['taker_id'] = dat['taker_id'].astype('category')
 dat['keeper_id'] = dat['keeper_id'].astype('category')
 takers = dat['taker_id'].unique()
@@ -353,7 +351,7 @@ obs_wl = dat['is_goal'].values
 ```
 
 Define the model using pymc3 as follows, the standard deviation parameters (sigma and sigma_gk) have to be restricted to positive only values here because of the subtraction of the taker and keeper skill.
-I chose to use a different standard deviation paramter for takers and goalkeepers, however a single parameter can be used for both groups and a similar result is found.
+I chose to use a different standard deviation parameter for takers and goalkeepers, however a single parameter can be used for both groups and a similar result is found.
 I used the sigmoid function from the theano library to ensure that $$p \in [0,1]$$.
 
 ``` python
