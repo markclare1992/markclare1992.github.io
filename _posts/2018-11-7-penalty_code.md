@@ -4,7 +4,7 @@ date: 2018-11-16
 layout: single
 excerpt: R, stan & python code and thinking process.
 header:
-  image: "assets/images/mahrez.jpg"
+  image: "/assets/images/partial_pooling.jpeg"
   filter: 0.5
   teaser: "/assets/images/partial_pooling.jpeg"
 categories:
