@@ -326,7 +326,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import theano.tensor as tt
-from pymc3 import  Bound, Bernoulli, Model, model_to_graphviz, Normal, sample, stats, traceplot
+from pymc3 import  Bound, Bernoulli, Model, model_to_graphviz, Normal, sample, sample_ppc, stats, traceplot
 import matplotlib.pyplot as plt
 ```
 
@@ -441,9 +441,51 @@ axs.set_xlabel('Player')
 axs.set_ylabel('Penalty taking ability estimate')
 _= axs.set_xticks(df_filt.index + .5)
 _= axs.set_xticklabels(df_filt['index'].values, rotation=45)
+plt.tight_layout()
 plt.show()
 ```
 
 <figure class='centre'>
-	<a href="/assets/images/taker_random.png"><img src="/assets/images/taker_random.png"></a>
+	<a href="/assets/images/taker_ratings_random.png"><img src="/assets/images/taker_ratings_random.png"></a>
+</figure>
+
+I wrote the plot code as a function to make it easier to generate a new plot.
+
+``` python
+def plot_trace(trace, parameter, indexes, n_samples):
+    """Plot specified parameter from trace"""
+    df_hpd = pd.DataFrame(stats.hpd(trace[parameter]),
+                          columns=['hpd_low', 'hpd_high'],
+                          index=indexes)
+
+    df_median = pd.DataFrame(stats.quantiles(trace[parameter])[50],
+                             columns=['hpd_median'],
+                             index=indexes)
+
+    df_hpd = df_hpd.join(df_median)
+    df_hpd['relative_lower'] = df_hpd.hpd_median - df_hpd.hpd_low
+    df_hpd['relative_upper'] = df_hpd.hpd_high - df_hpd.hpd_median
+    df_filt = pd.DataFrame.sample(df_hpd, n=n_samples)
+    df_filt = df_filt.sort_values(by='hpd_median')
+    df_filt = df_filt.reset_index()
+    df_filt['x'] = df_filt.index + .5
+    fig, axs = plt.subplots(figsize=(10, 4))
+    axs.errorbar(df_filt.x, df_filt.hpd_median,
+                 yerr=(df_filt[['relative_lower', 'relative_upper']].values).T,
+                 fmt='o', alpha=0.5, capsize=3)
+
+    axs.set_title(parameter)
+    axs.set_xlabel('Player')
+    axs.set_ylabel('Skill ability estimate')
+    _ = axs.set_xticks(df_filt.index + .5)
+    _ = axs.set_xticklabels(df_filt['index'].values, rotation=45)
+    plt.tight_layout()
+    plt.show()
+```
+
+``` python
+plot_trace(trace, alpha_std_gk, keepers, 20)
+```
+<figure class='centre'>
+	<a href="/assets/images/goalkeeper_random.png"><img src="/assets/images/goalkeeper_random.png"></a>
 </figure>
