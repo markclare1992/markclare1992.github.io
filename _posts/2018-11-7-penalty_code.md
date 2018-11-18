@@ -484,7 +484,7 @@ def plot_trace(trace, parameter, indexes, n_samples):
 ```
 
 ``` python
-plot_trace(trace, alpha_std_gk, keepers, 20)
+plot_trace(trace, alpha_std_gk, keepers, 15)
 ```
 <figure class='centre'>
 	<a href="/assets/images/goalkeeper_random.png"><img src="/assets/images/goalkeeper_random.png"></a>
