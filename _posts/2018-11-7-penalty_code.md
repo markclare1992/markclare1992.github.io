@@ -106,17 +106,20 @@ ggplot(aes(x=conversion), data=df_player) +
 
 The graph isn't very clear and doesn't really show whats happening.  You can see that the extreme values of 0% and 100% for conversion percentages have the highest counts.
 
-
 ``` r
 df_player %>% 
   group_by(n_pens) %>% 
   summarise(n = n()) %>% 
   mutate("%" = n/sum(n)) %>% 
   head(5)
-#> # A tibble: 5 x 3
+#> # A tibble: 6 x 3
 #>   n_pens     n    `%`
 #>    <int> <int>  <dbl>
-#> 1      1  1066 
+#> 1      1  1066 0.419 
+#> 2      2   446 0.175 
+#> 3      3   262 0.103 
+#> 4      4   165 0.0649
+#> 5      5   130 0.0511
 ```
 There is 1066 players in the dataset that have taken only 1 penalty, this is why the conversion graph looks odd.
 It's fairly easy to create a graph that provides some insight.  
@@ -151,7 +154,6 @@ ggplot(aes(x=conversion), data=df_player %>% filter(n>10)) +
 	<a href="/assets/images/final_conversion_graph.jpeg"><img src="/assets/images/final_conversion_graph.jpeg"></a>
 </figure>
 
-
 ## Modelling
 
 ### Complete Pooling
@@ -159,7 +161,6 @@ I started off the modelling process using stan in Rstudio (using the rstan packa
 We have $$N$$ players in the dataset, each player $$n \in N$$ has $$y_{n}$$ goals (successes) out of $$k_{n}$$ penalty attempts (trials).
 We model each penalty as having the same chance of success $$\phi \in [0,1]$$, hence we assume a uniform prior on $$\phi$$
 With the assumption that each players penalty attempts are independent Bernoulli trials and that each player is independent we can use the following stan and R code to fit the distributions.
-
 
 ### Stan code (pool.stan)
 ```
@@ -181,7 +182,7 @@ model {
 library(rstan)
 df_binomial <- df %>%
   group_by(taker_id) %>%
-  summarise(y=sum(is_goal), K=n())
+  summarise(y = sum(is_goal), K = n())
 N <- dim(df_binomial)[1]
 K <- df_binomial$K
 y <- df_binomial$y
@@ -191,7 +192,6 @@ fit_pool <- stan("pool.stan", data=c("N", "K", "y"),
 ss_pool <- rstan::extract(fit_pool);
 print(fit_pool, c("phi"), probs=c(0.025, 0.5, 0.975));
 ```
-
 ```
 Inference for Stan model: pool.
 4 chains, each with iter=5000; warmup=2500; thin=1; 
@@ -268,6 +268,7 @@ generated quantities {
     //calculate success for non centred parameterization
 }
 ```
+
 ### R Code
 
 ``` r
