@@ -126,7 +126,7 @@ It's fairly easy to create a graph that provides some insight.
 By filtering the dataset for players that have more than 10 attempts, and making the x-axis $$[0,1]$$ a clearer graph is created.
 
 ``` r
-ggplot(aes(x=conversion), data=df_player %>% filter(n>10)) + 
+ggplot(aes(x=conversion), data=df_player %>% filter(n_pens>10)) + 
   geom_histogram(binwidth = 0.05)+
   coord_cartesian(xlim=c(0,1))
 ```
@@ -139,7 +139,7 @@ With ggplot2 it's fairly easy to quickly improve the aesthetics of a graph.  I l
 Adding titles, axis labels and a horizontal line on the x axis creates the final graph.
 
 ``` r
-ggplot(aes(x=conversion), data=df_player %>% filter(n>10)) + 
+ggplot(aes(x=conversion), data=df_player %>% filter(n_pens>10)) + 
   geom_histogram(binwidth = 0.05, fill='#E94F64', alpha=.75)+
   coord_cartesian(xlim=c(0,1))+
   fte_theme()+
