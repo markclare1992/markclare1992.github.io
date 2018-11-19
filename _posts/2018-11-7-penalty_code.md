@@ -60,7 +60,7 @@ head(df)
 #> 6 gKpON8x  jL85E       46     33 3EeX1OL4 KZgnMpEp  right TRUE
 ```
 
-Grouping by whether or not the penalty is a goal we can look at the average conversion.
+Grouping by whether or not the penalty is a goal we can look at the average conversion.  Here you can see that 75.7% of penalties result in a goal.
 
 ``` r
 df %>% 
