@@ -132,7 +132,7 @@ ggplot(aes(x=conversion), data=df_player %>% filter(n_pens>10)) +
 ```
 
 <figure class='centre'>
-	<a href="/assets/images/second_conversion_graph.jpeg"><img src="/assets/images/second_conversion_graph.jpeg"></a>
+	<a href="/assets/images/second_conversion_graph_basic.jpeg"><img src="/assets/images/second_conversion_graph_basic.jpeg"></a>
 </figure>
 
 With ggplot2 it's fairly easy to quickly improve the aesthetics of a graph.  I like using a five-thirty-eight style theme from [**here**](https://github.com/KieranHunt/dpi-algorithms-r/blob/master/fte-theme.R).
