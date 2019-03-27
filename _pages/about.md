@@ -6,7 +6,7 @@ layout: single
 last_modified_at: 2018-01-10
 toc: true
 ---
-Sports trader with an interest in data science & programming.  The site will share posts & projects mainly revolving around football.
+Sports trader with an interest in data science & programming, using online courses and self learning to improve my skills.  The site will share posts & projects mainly revolving around football.
 Analysis & visualisation will be done using software including;
 Python, RStudio, MongoDB & D3.
 
@@ -15,7 +15,7 @@ Python, RStudio, MongoDB & D3.
 - Ratings for major European leagues using both XG & non-XG models, both for short term bets above and long term bets.
 - Use of API's for notifications & pricing.
 - Player specific databases used for further bets.
-- Python used for web scraping, MongoDB used as the database, private Github repo's for version control.
+- Python & selenium used for web scraping, MongoDB used as the database, private Github repo's for version control.
 - Shiny app's used for calculations. 
 
 ## Footbal Trader
