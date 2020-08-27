@@ -127,13 +127,13 @@ It's not exactly clear how to interpret what the plot below means so I will go i
 <details>
   <summary>Click here for forest plots of team ratings.</summary>
   
-  # Attack ratings.
+  ### Attack ratings.
   
 <figure class='centre'>
   <a href="/assets/images/attack.png"><img src="/assets/images/attack.png"></a>
 </figure>
 
-  # Defense ratings.
+  ### Defense ratings.
   
 <figure class='centre'>
   <a href="/assets/images/defense.png"><img src="/assets/images/defense.png"></a>
@@ -156,12 +156,12 @@ Likewise with no fans at all being allowed into venues until October, and likely
 
 ## Graphs
 
-# Difference to home season points.
+### Difference to home season points.
 <figure class='centre'>
   <a href="/assets/images/home_points.png"><img src="/assets/images/home_points.png"></a>
 </figure>
 
-# Difference to total season points.
+### Difference to total season points.
 <figure class='centre'>
   <a href="/assets/images/total_points.png"><img src="/assets/images/total_points.png"></a>
 </figure>
