@@ -143,11 +143,11 @@ It's not exactly clear how to interpret what the plot below means so I will go i
 ## Interpretability 
 We can use the fitted model to look at the difference in predictions between games at home with fans, games at home with no fans, and games at a neutral venue.
 For example, using the fitted model to predict Manchester City vs Norwich.
-Match format | Manchester City goals| Norwich goals
--------------|----------------------|--------------
-At home with fans| 3.0| 0.89
-At home with no fans| 2.62| 0.89
-Neutral venue| 2.51| 0.89
+|Match format | Manchester City goals| Norwich goals|
+|-------------|----------------------|--------------|
+|At home with fans| 3.0| 0.89|
+|At home with no fans| 2.62| 0.89|
+|Neutral venue| 2.51| 0.89|
 
 Summing over the course of a season you can see the effects this will have on the final points standings.
 Obviously there was probably a more dramatic effect in terms of difference in total points last season due to only 92 of the games being behind closed doors.
