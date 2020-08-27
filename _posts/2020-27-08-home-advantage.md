@@ -119,7 +119,7 @@ home_attack_fans_basic|      0.14 |     0.10    |  0.14   |  -0.02 |     0.30 | 
 
     
 ## Parameters
-
+It's not exactly clear how to interpret what the plot below means so I will go into more detail further on.
 <figure class='centre'>
   <a href="/assets/images/hadv.png"><img src="/assets/images/hadv.png"></a>
 </figure>
@@ -155,8 +155,16 @@ Likewise with no fans at all being allowed into venues until October, and likely
 
 
 ## Graphs
-Season points graphs.
 
+# Difference to home season points.
+<figure class='centre'>
+  <a href="/assets/images/home_points.jpeg"><img src="/assets/images/home_points.jpeg"></a>
+</figure>
+
+# Difference to total season points.
+<figure class='centre'>
+  <a href="/assets/images/total_piints.jpeg"><img src="/assets/images/total_points.jpeg"></a>
+</figure>
 
 ## Model Issues
 
