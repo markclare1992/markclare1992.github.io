@@ -126,11 +126,15 @@ home_attack_fans_basic|      0.14 |     0.10    |  0.14   |  -0.02 |     0.30 | 
 
 <details>
   <summary>Click here for forest plots of team ratings.</summary>
-  Attack ratings.
+  
+  # Attack ratings.
+  
 <figure class='centre'>
   <a href="/assets/images/attack.png"><img src="/assets/images/attack.png"></a>
 </figure>
-  Defense ratings.
+
+  # Defense ratings.
+  
 <figure class='centre'>
   <a href="/assets/images/defense.png"><img src="/assets/images/defense.png"></a>
 </figure>
