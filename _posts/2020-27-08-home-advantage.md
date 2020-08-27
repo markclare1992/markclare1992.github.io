@@ -65,7 +65,7 @@ mcmc.run(rng_key, team=dset.teamid,
          extra_fields=('potential_energy',))
 ```
 <details>
-  <summary>Model summary is shown below!</summary>
+  <summary>Model summary is shown below.</summary>
   
 parameter|mean|std|median|5.0%|95.0%|n_eff|r_hat
 ---------|----|---|------|----|-----|-----|----
