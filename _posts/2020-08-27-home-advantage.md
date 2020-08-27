@@ -1,6 +1,6 @@
 ---
 title: "Another home advantage blog post."
-date: 2020-27-08
+date: 2020-08-27
 layout: single
 excerpt: Investigating fans presence on home advantage effect.
 categories:
