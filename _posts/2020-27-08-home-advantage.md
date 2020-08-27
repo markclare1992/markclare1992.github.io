@@ -138,7 +138,7 @@ It's not exactly clear how to interpret what the plot below means so I will go i
 <figure class='centre'>
   <a href="/assets/images/defense.png"><img src="/assets/images/defense.png"></a>
 </figure>
-
+</details>
   
 ## Interpretability 
 We can use the fitted model to look at the difference in predictions between games at home with fans, games at home with no fans, and games at a neutral venue.
@@ -158,12 +158,12 @@ Likewise with no fans at all being allowed into venues until October, and likely
 
 # Difference to home season points.
 <figure class='centre'>
-  <a href="/assets/images/home_points.jpeg"><img src="/assets/images/home_points.jpeg"></a>
+  <a href="/assets/images/home_points.png"><img src="/assets/images/home_points.png"></a>
 </figure>
 
 # Difference to total season points.
 <figure class='centre'>
-  <a href="/assets/images/total_piints.jpeg"><img src="/assets/images/total_points.jpeg"></a>
+  <a href="/assets/images/total_points.png"><img src="/assets/images/total_points.png"></a>
 </figure>
 
 ## Model Issues
