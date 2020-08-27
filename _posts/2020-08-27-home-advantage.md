@@ -143,6 +143,7 @@ It's not exactly clear how to interpret what the plot below means so I will go i
 ## Interpretability 
 We can use the fitted model to look at the difference in predictions between games at home with fans, games at home with no fans, and games at a neutral venue.
 For example, using the fitted model to predict Manchester City vs Norwich.
+
 |Match format | Manchester City goals| Norwich goals|
 |-------------|----------------------|--------------|
 |At home with fans| 3.0| 0.89|
