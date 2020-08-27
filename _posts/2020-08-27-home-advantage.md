@@ -122,6 +122,7 @@ mcmc.run(rng_key, team=dset.teamid,
 
     
 ## Parameters
+
 It's not exactly clear how to interpret what the plot below means so I will go into more detail further on.
 <figure class='centre'>
   <a href="/assets/images/hadv.png"><img src="/assets/images/hadv.png"></a>
@@ -130,13 +131,13 @@ It's not exactly clear how to interpret what the plot below means so I will go i
 <details>
   <summary>Click here for forest plots of team ratings.</summary>
   
-  ### Attack ratings.
+ ### Attack ratings.
   
 <figure class='centre'>
   <a href="/assets/images/attack.png"><img src="/assets/images/attack.png"></a>
 </figure>
 
-  ### Defense ratings.
+ ### Defense ratings.
   
 <figure class='centre'>
   <a href="/assets/images/defense.png"><img src="/assets/images/defense.png"></a>
