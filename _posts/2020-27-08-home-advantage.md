@@ -68,7 +68,7 @@ Model summary is shown below.
 <details>
   <summary>Click to expand!</summary>
   
-parameter|meanstd|median|5.0%|95.0%|n_eff|r_hat
+parameter|mean|std|median|5.0%|95.0%|n_eff|r_hat
 ---------|-------|------|----|-----|-----|----
 attack_mean|0.15  |    0.71   |   0.15   |  -0.98|      1.34  | 6154.75  |    1.00
 attack_sigma|0.23   |   0.05  |    0.23  |    0.16  |    0.32 |  3912.60   |   1.00
