@@ -118,9 +118,23 @@ home_attack_fans_basic|      0.14 |     0.10    |  0.14   |  -0.02 |     0.30 | 
 </details>
 
     
-## Outcome
-##graphs for both home advantage parameters.
-  
+## Parameters
+
+<figure class='centre'>
+  <a href="/assets/images/hadv.png"><img src="/assets/images/hadv.png"></a>
+</figure>
+
+<details>
+  <summary>Click here for forest plots of team ratings.</summary>
+  Attack ratings.
+<figure class='centre'>
+  <a href="/assets/images/attack.png"><img src="/assets/images/attack.png"></a>
+</figure>
+  Defense ratings.
+<figure class='centre'>
+  <a href="/assets/images/defense.png"><img src="/assets/images/defense.png"></a>
+</figure>
+
   
 ## Interpretability 
 We can use the fitted model to look at the difference in predictions between games at home with fans, games at home with no fans, and games at a neutral venue.
@@ -136,9 +150,11 @@ Obviously there was probably a more dramatic effect in terms of difference in to
 Likewise with no fans at all being allowed into venues until October, and likely not at full capacity until well into the new year, fixture ordering plays a more important role than before on predicting final league standings.
 
 
-##Graphs
+## Graphs
+Season points graphs.
 
-##Model Issues
+
+## Model Issues
 
 1. Xg model issues
 2. Hierarchical model issues
