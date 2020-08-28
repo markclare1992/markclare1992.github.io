@@ -189,13 +189,13 @@ If predicting final standings or points for the next season it is important to f
 
 Looking at the predicted points totals for the top and bottom teams, it is noticeable that the predictions for points seem too low for the good teams and too high for the bad teams. Whilst this was more of an exercise in the impact of no fans at games, this is clearly an issue and I go into details of why the predictions are more conservative than they should be below.
 
-1. XG model issues.
+### XG model issues.
 I have used a basic XG model, which does not include finishing skill, goalkeeper skill, or position of defenders/goalkeeper.  This means that good teams will be under-rated and likewise bad teams over-rated.
 The XG data has penalties excluded, good teams tend to win more penalties than bad teams, again this will under-rate good teams and over-rate bad teams.
 
-2. Hierarchical model issues.
+### Hierarchical model issues.
 Hierarchical models inherently suffer from shrinkage. This means that extreme values for teams ratings, i.e the very good, and very bad teams, are pulled towards the grand mean of all the teams.
 
-3. Other model issues.
+### Other model issues.
 The model includes no specific lineup information, squad rotation and January signings are not included as factors.
 The model assumes that a teams attack & defense abilities are fixed over time, ideally these would be allowed to vary over time however that is a much more difficult coding exercise.
