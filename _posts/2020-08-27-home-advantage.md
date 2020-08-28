@@ -200,3 +200,11 @@ Hierarchical models inherently suffer from shrinkage. This means that extreme va
 The model includes no specific lineup information, squad rotation and January signings are not included as factors.
 The model assumes that a teams attack & defense abilities are fixed over time, ideally these would be allowed to vary over time however that is a much more difficult coding exercise.
 There was no accounting for motivational effects, i.e after the restart there was arguably 2 groups of teams, those with high motivation and something to play for (Winner/European places/relegation) and those comfortably safe in mid-table.
+
+## Future analysis.
+
+Potential continuations listed below.
+
+1. Add time varying skill ratings.
+2. Include number of fans in the analysis, this will be of interest when fans are allowed back into stadiums at reduced capacity.
+3. Include sub groups of good, average and bad teams in the hierarchical model to reduce shrinkage.
