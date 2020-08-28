@@ -159,10 +159,6 @@ For example, using the fitted model to predict Manchester City vs Norwich.
 
 We can then use the fitted model to predict a whole season, and see the difference between a whole season played as normal, and a whole season played behind closed doors.
 
-Summing over the course of a season you can see the effects this will have on the final points standings.
-Obviously there was probably a more dramatic effect in terms of difference in total points last season due to only 92 of the games being behind closed doors.
-Likewise with no fans at all being allowed into venues until October, and likely not at full capacity until well into the new year, fixture ordering plays a more important role than before on predicting final league standings.
-
 
 ## Graphs
 
