@@ -70,6 +70,7 @@ mcmc.run(rng_key, team=dset.teamid,
 </details>
 
 ## Model summary
+
 |parameter|mean|std|median|5.0%|95.0%|n_eff|r_hat|
 |---------|----|---|------|----|-----|-----|-----|
 |attack_mean|0.15  |    0.71   |   0.15   |  -0.98|      1.34  | 6154.75  |    1.00|
@@ -120,8 +121,6 @@ mcmc.run(rng_key, team=dset.teamid,
 |home_attack_fans_basic|      0.14 |     0.10    |  0.14   |  -0.02 |     0.30 | 8699.55  |    1.00|
 
 
-
-    
 ## Parameters
 
 It's not exactly clear how to interpret what the plot below means so I will go into more detail further on.
