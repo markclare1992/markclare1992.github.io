@@ -205,6 +205,7 @@ There was no accounting for motivational effects, i.e after the restart there wa
 
 Potential continuations listed below.
 
-1. Add time varying skill ratings.
-2. Include number of fans in the analysis, this will be of interest when fans are allowed back into stadiums at reduced capacity.
-3. Include sub groups of good, average and bad teams in the hierarchical model to reduce shrinkage.
+1. Look at the other European leagues that returned to football behind closed doors and see whether the findings above still hold.
+2. Add time varying skill ratings.
+3. Include number of fans in the analysis, this will be of interest when fans are allowed back into stadiums at reduced capacity.
+4. Include sub groups of good, average and bad teams in the hierarchical model to reduce shrinkage.
