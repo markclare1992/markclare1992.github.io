@@ -3,6 +3,8 @@ title: "Another home advantage blog post."
 date: 2020-08-27
 layout: single
 excerpt: Investigating fans presence on home advantage effect.
+header:
+  teaser: "/assets/images/home_points.png"
 categories:
   - Football
 tags:
@@ -65,7 +67,7 @@ mcmc.run(rng_key, team=dset.teamid,
          extra_fields=('potential_energy',))
 ```
 <details>
-  <summary>Model summary is shown below.</summary>
+  <summary>Click here for model summary.</summary>
   
 
 ## Model summary
