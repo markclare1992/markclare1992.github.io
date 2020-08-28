@@ -16,7 +16,7 @@ comments: true
 
 ## Motivation
 With 92 Premier league games taking place behind closed doors, and considerably more across the globe, there was an abundance of "analysis" claiming that home advantage had completely disappeared or even reversed with games taking place with no fans.
-I had been looking for a reason to force myself to install and learn some pyro/numpyro for a while so took this as an opportunity to give it a go.
+I had been looking for a reason to force myself to install and learn Pyro/Numpyro for a while so took this as an opportunity to give it a go.
 
 ## Model
 In a similar fashion to Ben's analysis [**here**](http://www.statsandsnakeoil.com/2020/07/27/estimating-the-disruption-to-home-advantage/) I have used a basic Dixon-Coles style model.
@@ -199,7 +199,7 @@ Hierarchical models inherently suffer from shrinkage. This means that extreme va
 ### Other model issues.
 The model includes no specific lineup information, squad rotation and January signings are not included as factors.
 The model assumes that a teams attack & defense abilities are fixed over time, ideally these would be allowed to vary over time however that is a much more difficult coding exercise.
-There was no accounting for motivational effects, i.e after the restart there was arguably 2 groups of teams, those with high motivation and something to play for (Winner/European places/relegation) and those comfortably safe in mid-table.
+There was no accounting for motivational effects, i.e after the restart there was arguably 2 groups of teams, those with high motivation and something to play for (winner/european places/relegation) and those comfortably safe in mid-table.
 
 ## Future analysis.
 
