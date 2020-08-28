@@ -179,6 +179,11 @@ You can see that the majority of teams would earn less points in total over the 
   <a href="/assets/images/total_points.png"><img src="/assets/images/total_points.png"></a>
 </figure>
 
+## Implications
+
+Fans are not due to be allowed back into venues until at least October and even then it is reported to be at only around 30% capacity.
+If predicting final standings or points for the next season it is important to factor this issue in to get a more accurate prediction.
+
 ## Model Issues
 
 1. Xg model issues
