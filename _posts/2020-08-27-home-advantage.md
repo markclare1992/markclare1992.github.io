@@ -162,7 +162,7 @@ For example, using the fitted model to predict Manchester City vs Norwich.
 We can then use the fitted model to predict a whole season, and see the difference between a whole season played as normal, and a whole season played behind closed doors.
 
 
-## Graphs
+## Points
 
 ### Difference to home season points.
 You can see that all teams would earn significantly less points at home over the course of the season if all games were played behind closed doors.
