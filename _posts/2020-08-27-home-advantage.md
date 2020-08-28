@@ -199,3 +199,4 @@ Hierarchical models inherently suffer from shrinkage. This means that extreme va
 ### Other model issues.
 The model includes no specific lineup information, squad rotation and January signings are not included as factors.
 The model assumes that a teams attack & defense abilities are fixed over time, ideally these would be allowed to vary over time however that is a much more difficult coding exercise.
+There was no accounting for motivational effects, i.e after the restart there was arguably 2 groups of teams, those with high motivation and something to play for (Winner/European places/relegation) and those comfortably safe in mid-table.
