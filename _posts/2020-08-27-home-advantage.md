@@ -156,6 +156,8 @@ For example, using the fitted model to predict Manchester City vs Norwich.
 |At home with no fans| 2.62| 0.89|
 |Neutral venue| 2.51| 0.89|
 
+We can then use the fitted model to predict a whole season, and see the difference between a whole season played as normal, and a whole season played behind closed doors.
+
 Summing over the course of a season you can see the effects this will have on the final points standings.
 Obviously there was probably a more dramatic effect in terms of difference in total points last season due to only 92 of the games being behind closed doors.
 Likewise with no fans at all being allowed into venues until October, and likely not at full capacity until well into the new year, fixture ordering plays a more important role than before on predicting final league standings.
@@ -164,11 +166,15 @@ Likewise with no fans at all being allowed into venues until October, and likely
 ## Graphs
 
 ### Difference to home season points.
+You can see that all teams would earn significantly less points at home over the course of the season if all games were played behind closed doors.
+
 <figure class='centre'>
   <a href="/assets/images/home_points.png"><img src="/assets/images/home_points.png"></a>
 </figure>
 
 ### Difference to total season points.
+You can see that the majority of teams would earn less points in total over the course of the season, a few of the "worse" teams would earn marginally more points due to the increase in numbers of draws.
+
 <figure class='centre'>
   <a href="/assets/images/total_points.png"><img src="/assets/images/total_points.png"></a>
 </figure>
