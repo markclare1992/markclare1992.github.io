@@ -67,8 +67,9 @@ mcmc.run(rng_key, team=dset.teamid,
 <details>
   <summary>Model summary is shown below.</summary>
   
+</details>
 
-
+## Model summary
 |parameter|mean|std|median|5.0%|95.0%|n_eff|r_hat|
 |---------|----|---|------|----|-----|-----|-----|
 |attack_mean|0.15  |    0.71   |   0.15   |  -0.98|      1.34  | 6154.75  |    1.00|
@@ -118,7 +119,7 @@ mcmc.run(rng_key, team=dset.teamid,
 |home_attack_basic|      0.04    |  0.10  |    0.04   |  -0.12   |   0.20   |8807.34   |   1.00|
 |home_attack_fans_basic|      0.14 |     0.10    |  0.14   |  -0.02 |     0.30 | 8699.55  |    1.00|
 
-</details>
+
 
     
 ## Parameters
