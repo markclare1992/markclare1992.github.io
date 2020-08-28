@@ -15,7 +15,7 @@ comments: true
 ---
 
 ## Motivation
-With 92 Premier league games taking place behind closed doors, and considerably more across the globe, there was an abundance of "analysis" claiming that home advantage had completely disappeared or even reversed with games taking place with no fans.
+With 92 Premier League games taking place behind closed doors, and considerably more across the globe, there was an abundance of "analysis" claiming that home advantage had completely disappeared or even reversed with games taking place with no fans.
 I had been looking for a reason to force myself to install and learn Pyro/Numpyro for a while so took this as an opportunity to give it a go.
 
 ## Model
