@@ -25,7 +25,7 @@ I chose to split home advantage into 2 variables;
 1.  The advantage from playing at your home ground, i.e familiarity with pitch dimensions etc.
 2.  The advantage gained from atmosphere, i.e fans being present.
 
-## [Jump to findings](##Interpretability)
+## [Jump to findings](#interpretability)
 
 ## Code
 Numpyro code used for the model is below.
