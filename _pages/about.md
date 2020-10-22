@@ -4,7 +4,7 @@ title: "About"
 author_profile: true
 layout: single
 last_modified_at: 2018-01-10
-toc: true
+toc: false
 ---
 Sports trader with an interest in data science & programming, using online courses and self learning to improve my skills.  The site will share posts & projects mainly revolving around football.
 Analysis & visualisation will be done using software including;
