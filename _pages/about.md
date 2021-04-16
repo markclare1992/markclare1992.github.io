@@ -15,10 +15,10 @@ Python, RStudio, MongoDB & D3.
 - Ratings for major European leagues using both XG & non-XG models, both for short term bets above and long term bets.
 - Use of API's for notifications & pricing.
 - Player specific databases used for further bets.
-- Python & selenium used for web scraping, MongoDB used as the database, private Github repo's for version control.
-- Shiny app's used for calculations. 
+- Python & selenium used for web scraping, MongoDB used as the database, private Github repos for version control.
+- Shiny apps used for calculations. 
 
-## Footbal Trader
+## Football Trader
 ### Spreadex
 #### September 2015 - Present
 - Web scraping to maintain databases relevant for pricing (using Rvest & tidyverse).
@@ -47,15 +47,15 @@ Mathematical Analysis, Vector Calculus, Fourier Analysis, Complex Functions, Num
 ##### First Year Average 77%
 Analytical, Applied, Calculus, Foundations of Pure Maths, Linear, Structures, Probability, Statistics.
 
-### Data Analsyst Nanodegree
+### Data Analyst Nanodegree
 #### Udacity 2015-17
 Completed online course which included the following projects;
-1. Testing a perceptual phenomenon - Compute descriptive statistics an perform statistical test.
+1. Testing a perceptual phenomenon - Compute descriptive statistics and perform statistical tests.
 2. Investigate a dataset - Choose a dataset, perform an investigation and share findings.
 3. Data wrangling - Audit, clean and import data into a database (MongoDB), then run queries on database.
 4. Explore & summarize data - Scrape a dataset and perform a complete exploratory data analysis using R.
 5. Identify fraud - Use machine learning (Python) to identify persons of interest in the Enron dataset.
-6 . Data visualisaion - Use D3 to build an effective visualisation.
+6 . Data visualisation - Use D3 to build an effective visualisation.
 7. A/B testing - Make design decisions for an A/B test and analyse results of a test.
 
 ### MongoDB University
