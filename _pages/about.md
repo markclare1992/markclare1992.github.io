@@ -16,7 +16,7 @@ Python, RStudio, MongoDB & D3.
 - Use of API's for notifications & pricing.
 - Player specific databases used for further bets.
 - Python & selenium used for web scraping, MongoDB used as the database, private Github repos for version control.
-- Shiny apps used for calculations. 
+- Shiny apps & Rstudio scripts used for calculations. 
 
 ## Football Trader
 ### Spreadex
